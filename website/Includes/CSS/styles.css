@@ -1,0 +1,44 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	margin-top: 100px;
+	background-color: white;
+}
+h1{
+	font-size: 25pt;
+	font-weight: bold;
+}
+#menu{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+}
+.menu{
+	font-size: 18pt;
+	font-weight: bold;
+	background-color: forestgreen;
+}
+h3{
+	color: rgb(0, 0, 0);
+}
+#meetingtimes{
+	position: absolute;
+	right: 10px;
+	width: 40%;
+}
+h2{
+	color: black;
+}
+#main{
+	width: 55%;
+	opacity: 1;
+	z-index: 2;
+}
+#actualmain{
+	opacity: 1;
+}
+#background{
+	
+}
