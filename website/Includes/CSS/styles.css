@@ -41,7 +41,13 @@ h2{
 }
 input[type=button] {
 	height: 50px;
-	width: 50%;
+	width: 27em;
 	color: white; 
 	background-color: forestgreen;
+}
+tr.menu{
+	width: 100%;
+}
+table.menu{
+	width: 100%;
 }
