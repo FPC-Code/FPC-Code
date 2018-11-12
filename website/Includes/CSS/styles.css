@@ -41,7 +41,7 @@ h2{
 }
 input[type=button] {
 	height: 50px;
-	width: 20em;
+	width: 50%;
 	color: white; 
 	background-color: forestgreen;
 }
