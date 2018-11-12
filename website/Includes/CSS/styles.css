@@ -39,6 +39,9 @@ h2{
 #actualmain{
 	opacity: 1;
 }
-#background{
-	
+input[type=button] {
+	height: 50px;
+	width: 20em;
+	color: white; 
+	background-color: forestgreen;
 }
