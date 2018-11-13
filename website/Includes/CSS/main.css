@@ -27,9 +27,13 @@ h2{
 #actualmain{
 	opacity: 1;
 }
-iframe.embed{
-	width: 80%;
-}
 div.wrapper{
 	text-align: center;
+	width: 100%
+}
+div.embed{
+	width: 100%
+}
+iframe.embed{
+	width: 80%;
 }
