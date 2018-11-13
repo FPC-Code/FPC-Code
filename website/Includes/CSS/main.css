@@ -27,3 +27,9 @@ h2{
 #actualmain{
 	opacity: 1;
 }
+iframe.embed{
+	width: 80%;
+}
+div.embed{
+	text-align: center;
+}
