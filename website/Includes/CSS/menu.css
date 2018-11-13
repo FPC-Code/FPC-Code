@@ -1,0 +1,24 @@
+#menu{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+}
+.menu{
+	font-size: 18pt;
+	font-weight: bold;
+	background-color: forestgreen;
+}
+input[type=button] {
+	height: 50px;
+	width: 100%;
+	color: white; 
+	background-color: forestgreen;
+}
+tr.menu{
+	width: 100%;
+}
+table.menu{
+	width: 100%;
+}
