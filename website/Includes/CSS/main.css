@@ -8,18 +8,6 @@ h1{
 	font-size: 25pt;
 	font-weight: bold;
 }
-#menu{
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 1;
-}
-.menu{
-	font-size: 18pt;
-	font-weight: bold;
-	background-color: forestgreen;
-}
 h3{
 	color: rgb(0, 0, 0);
 }
@@ -38,16 +26,4 @@ h2{
 }
 #actualmain{
 	opacity: 1;
-}
-input[type=button] {
-	height: 50px;
-	width: 27em;
-	color: white; 
-	background-color: forestgreen;
-}
-tr.menu{
-	width: 100%;
-}
-table.menu{
-	width: 100%;
 }
