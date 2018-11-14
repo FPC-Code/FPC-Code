@@ -13,9 +13,18 @@
 input[type=button] {
 	height: 50px;
 	width: 100%;
+	color: black; 
+	background-color: white;
+	border-color: black;
+	border-width: 2pt;
+	border-radius: 8px;
+	transition-duration: 0.4s;
+}
+input[type=button]:hover{
 	color: white; 
 	background-color: forestgreen;
 }
+
 tr.menu{
 	width: 100%;
 }
