@@ -3,6 +3,7 @@ body{
 	color: black;
 	margin-top: 60px;
 	background-color: white;
+	background-image: "./Images/fpclogo.jpg"
 }
 h1{
 	font-size: 25pt;
