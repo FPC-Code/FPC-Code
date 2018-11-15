@@ -59,6 +59,7 @@
 			<p>
 				We have created and maintained this website from the start of Coding Club in the school year of 2018-19
 			</p>
+			<div id="sign-up-wrap">
 			<div id="sign-up">
 			<form>
 				<h1>
@@ -66,41 +67,60 @@
 				</h1>
 
 				<h2>
+					First and Last Name
+				</h2>
+
+				<input type="text" name="name">
+
+				<h2>
+						Email
+				</h2>
+				
+				<input type="text" name="email">
+
+				<h2>
 					What do you need?
 				</h2><br><br>
 
-				<label for="New-Website">New Website</label><br>
-				<input type="radio" value="New-Website" id="sign-up-type"><br>
-				<label for="Maintenance-on-a-Website">Maintenance on a Website</label><br>
-				<input type="radio" value="Maintenance-on-a-Website" id="sign-up-type"><br>
-				<label for="One-Time-Update">One Time Update</label><br>
-				<input type="radio" value="One-Time-Update" id="sign-up-type"><br><br>
+
+				<label for="New-Website">New Website</label>
+				<input type="radio" value="New-Website" name="sign-up-type"><br>
+				<label for="Maintenance-on-a-Website">Maintenance on a Website</label>
+				<input type="radio" value="Maintenance-on-a-Website" name="sign-up-type"><br>
+				<label for="One-Time-Update">One Time Update</label>
+				<input type="radio" value="One-Time-Update" name="sign-up-type"><br><br>
 
 				<h2>
 					Do you have access to the website's HTML?
 				</h2><br>
 
 				<label for="Yes">Yes</label><br>
-				<input type="radio" value="yes" id="access"><br>
+				<input type="radio" value="yes" name="access"><br>
 				<label for="No">No</label><br>
-				<input type="radio" value="no" id="access"><br><br>
+				<input type="radio" value="no" name="access"><br><br>
 
 				<h2>
 					What kind of website is it?
 				</h2><br>
 
 				<label for="Informational">Informational</label><br>
-				<input type="radio" value="Informational" id="web-type"><br>
+				<input type="radio" value="Informational" name="web-type"><br>
 				<label for="Web-Form">Web Form</label><br>
-				<input type="radio" value="Web-Form" id="web-type"><br>
+				<input type="radio" value="Web-Form" name="web-type"><br>
 				<label for="No">Other</label><br>
-				<input type="radio" value="Other" id="web-type"><br><br>
+				<input type="radio" value="Other" name="web-type"><br><br>
 
 				<h2>
 					If other, what kind?
 				</h2><br>
 				<input type="text" id="web-type-other">
+				<br><br>
+				<input type="submit" name="submit">
+
+
+
 			</form>
+			</div>
 			</div>
 		</div>
 		<script src="./Includes/JS/script.js"></script>
