@@ -29,8 +29,9 @@ h2{
 	opacity: 1;
 }
 div.wrapper{
+	margin-top: 100px;
 	text-align: center;
-	width: 100%
+	width: 100%;
 }
 div.embed{
 	width: 100%;
