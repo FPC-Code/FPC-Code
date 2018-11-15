@@ -31,7 +31,7 @@
 			</table>
 		</div>
 		
-		<div id="main">
+		<div class="main">
 			<h1>
 				Our Prospective Projects:
 			</h1>
@@ -59,11 +59,49 @@
 			<p>
 				We have created and maintained this website from the start of Coding Club in the school year of 2018-19
 			</p>
-		</div>
-		<div id="sign-up">
-			<h1>
-				Website Creation/Maintenance Sign-Up
-			</h1>
+			<div id="sign-up">
+			<form>
+				<h1>
+					Website Creation/Maintenance Sign-Up <br>(DOES NOT WORK RIGHT NOW, THIS MESSAGE WILL BE REMOVED WHEN THIS FEATURE IS AVAILABLE)
+				</h1>
+
+				<h2>
+					What do you need?
+				</h2><br><br>
+
+				<label for="New-Website">New Website</label><br>
+				<input type="radio" value="New-Website" id="sign-up-type"><br>
+				<label for="Maintenance-on-a-Website">Maintenance on a Website</label><br>
+				<input type="radio" value="Maintenance-on-a-Website" id="sign-up-type"><br>
+				<label for="One-Time-Update">One Time Update</label><br>
+				<input type="radio" value="One-Time-Update" id="sign-up-type"><br><br>
+
+				<h2>
+					Do you have access to the website's HTML?
+				</h2><br>
+
+				<label for="Yes">Yes</label><br>
+				<input type="radio" value="yes" id="access"><br>
+				<label for="No">No</label><br>
+				<input type="radio" value="no" id="access"><br><br>
+
+				<h2>
+					What kind of website is it?
+				</h2><br>
+
+				<label for="Informational">Informational</label><br>
+				<input type="radio" value="Informational" id="web-type"><br>
+				<label for="Web-Form">Web Form</label><br>
+				<input type="radio" value="Web-Form" id="web-type"><br>
+				<label for="No">Other</label><br>
+				<input type="radio" value="Other" id="web-type"><br><br>
+
+				<h2>
+					If other, what kind?
+				</h2><br>
+				<input type="text" id="web-type-other">
+			</form>
+			</div>
 		</div>
 		<script src="./Includes/JS/script.js"></script>
 	</body>
