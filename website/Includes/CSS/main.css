@@ -1,38 +1,36 @@
 body{
 	font-family: Arial, Helvetica, sans-serif;
 	color: black;
-	margin-top: 60px;
-	background: white url(../../Images/fpclogo.jpg) no-repeat top right/30%;
-	background-attachment: scroll;
+	background: white;
+	padding-top: 40px;
 }
 h1{
 	font-size: 25pt;
 	font-weight: bold;
 }
-h3{
-	color: rgb(0, 0, 0);
+h3 h2{
+	color: black;
 }
-#meetingtimes{
+/*#meetingtimes{
 	position: absolute;
 	right: 10px;
 	width: 40%;
+}*/
+div.main{
+	width: 100%;
+	background-image: url(../../Images/fpclogo.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: top right;
+	background-size: 40%;
 }
-h2{
-	color: black;
-}
-#main{
-	width: 55%;
-	opacity: 1;
-	z-index: 2;
-}
-#actualmain{
-	opacity: 1;
-}
-div.wrapper{
-	margin-top: 100px;
+#wrapper{
 	text-align: center;
 	width: 100%;
 }
 div.embed{
 	width: 100%;
+}
+#sign-up{
+	text-align: center;
 }
