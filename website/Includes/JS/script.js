@@ -10,7 +10,7 @@ function signin() {
 	var $form = $('form#signup'),
     url = 'https://script.google.com/macros/s/AKfycbxzzGc137WpdpYfJwyRHlybQvP9taBfM7tGdIB4qCLvNu1T128L/exec'
 
-$('#submit-form').on('click', function(e) {
+$('#submit').on('click', function(e) {
   e.preventDefault();
   var jqxhr = $.ajax({
     url: url,
