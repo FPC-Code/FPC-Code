@@ -7,7 +7,7 @@ function projects() {
 function signin() {
 	window.location.href="./sign-in.html";
 };
-	var $form = $('form#sign-up'),
+	var $form = $('form#signup'),
     url = 'https://script.google.com/macros/s/AKfycbxzzGc137WpdpYfJwyRHlybQvP9taBfM7tGdIB4qCLvNu1T128L/exec'
 
 $('#submit-form').on('click', function(e) {
