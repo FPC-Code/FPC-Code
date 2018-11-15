@@ -2,7 +2,8 @@ body{
 	font-family: Arial, Helvetica, sans-serif;
 	color: black;
 	margin-top: 60px;
-	background: white url(../../Images/fpclogo.jpg) no-repeat bottom right/30% scroll;
+	background: white url(../../Images/fpclogo.jpg) no-repeat bottom right/30%;
+	background-attachment: scroll;
 }
 h1{
 	font-size: 25pt;
