@@ -72,10 +72,10 @@
 				<h1>
 					Website Sign-up: Fill out this form and we will contact you shortly
 				</h1>
-				<form method="POST" action="https://formspree.io/galvantua@gmail.com">
+				<form method="POST" action="https://formspree.io/galvantua@gmail.com" onsubmit="submit()">
 					<input type="hidden" name="_subject" value="New Website Request" />
 					<!--<input type="hidden" name="_next" value="https://galvantua.github.io/CCWebstite/website/thanks.html" />-->
-					<input type="hidden" name="_cc" value="wilseytyler@gmail.com,benjammincruz@gmail.com,wanyea.barbel@aol.com" />
+					<!--<input type="hidden" name="_cc" value="wilseytyler@gmail.com,benjammincruz@gmail.com,wanyea.barbel@aol.com" />-->
 					<h2>
 					  First and Last Name
 					</h2>
@@ -131,13 +131,5 @@
 			</div>
 		</div>
 		<script src="./Includes/JS/script.js"></script>
-		<script src="assets/js/jquery.min.js"></script>
-		<script type="text/javascript">var submitted=false;</script>
-		<script type="text/javascript">
-		$('#gform').on('submit', function(e) {
-  		$('#gform *').fadeOut(2000);
-  		$('#gform').prepend('Your submission has been processed...');
-  		});
-		</script>
 	</body>
 </html>

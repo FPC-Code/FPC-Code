@@ -7,3 +7,6 @@ function projects() {
 function signin() {
 	window.location.href="./sign-in.html";
 };
+function submit() {
+	window.location.href="./thanks.html"
+}
