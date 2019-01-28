@@ -8,17 +8,21 @@ console.log(day);
 console.log(fullYear);
 
 var spin = (fullYear - (Math.pow((day + month), 2)));
+console.log(spin);
 
 function newSpinFunct(spin) {
 	while (true) {
+		console.log("in loop");
 		if (spin < charArr.length){
 			return spin;
 		}
 		else {
+			console.log("fail / do calculation");
 			spin = spin - charArr.length;
 		}
 	}
 }
+console.log("before function start");
 var actSpin = newSpinFunct(spin);
 
 var str = prompt("please enter string");
