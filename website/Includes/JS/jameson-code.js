@@ -1,15 +1,15 @@
 var date = new Date();
-var day = date.getDate;
-var month = date.getMonth;
-var fullYear = date.getFullYear;
+var day = date.getDate();
+var month = (date.getMonth() + 1)
+var fullYear = date.getFullYear();
 var charArr = ("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z");
-console.log(month+2);
-console.log(day+2);
-console.log(fullYear+2);
+console.log(month);
+console.log(day);
+console.log(fullYear);
 
 var spin = (fullYear - (Math.pow((day + month), 2)));
 console.log(spin);
-/*
+
 function newSpinFunct(spin) {
 	while (true) {
 		console.log("in loop");
@@ -22,7 +22,7 @@ function newSpinFunct(spin) {
 		}
 	}
 }
-*/
+
 console.log("before function start");
 var actSpin = newSpinFunct(spin);
 
