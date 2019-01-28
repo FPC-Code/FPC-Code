@@ -14,6 +14,7 @@ function newSpinFunct(spin) {
 	while (true) {
 		console.log("in loop");
 		if (spin < charArr.length){
+			console.log(spin);
 			return spin;
 		}
 		else {
