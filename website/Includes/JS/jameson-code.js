@@ -11,16 +11,14 @@ var spin = (fullYear - (Math.pow((day + month), 2)));
 console.log(spin);
 
 function newSpinFunct(spin, length) {
-	while (true) {
-		console.log("in loop");
-		if (spin < length){
-			console.log(spin);
-			return spin;
-		}
-		else {
-			console.log("fail / do calculation");
-			spin = spin - charArr.length;
-		}
+	var divisor = Math.floor(spin / length);
+	console.log(divisor);
+
+	if (divisor == 0) {
+		return spin;
+	}else {
+		var subtractor = divisor * length;
+		return (spin - subtractor);
 	}
 }
 
