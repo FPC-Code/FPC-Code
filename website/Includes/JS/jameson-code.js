@@ -35,7 +35,7 @@ function spinChars(spin, str) {
 	var newArr = [];
 		
 	for(var i = 0; i < str.length; i++){
-		var code = str.charCodeAt(i);
+		var code = str[i].charCodeAt(0);
 		if(code>=code0 && code<=codeZ){
 			if(code>=codeH)
 				newArr.push(String.fromCharCode(code-spin));
