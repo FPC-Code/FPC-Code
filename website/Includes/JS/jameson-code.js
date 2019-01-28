@@ -1,16 +1,8 @@
-var dateArr = console.log(Date());
-var day = dateArr[3];
-var fullYear = dateArr[4];
-var monthArr = ("", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
+var date = new Date();
+var day = date.getDate;
+var month = date.getMonth;
+var fullYear = date.getFullYear;
 var charArr = ("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z");
-
-var month = function month(){
-	for (var i = 0; i < monthArr.length; i++) {
-		if (dateArr[2] == monthArr[i]) {
-			return i;
-		}
-	}
-};
 console.log(month);
 console.log(day);
 console.log(fullYear);
