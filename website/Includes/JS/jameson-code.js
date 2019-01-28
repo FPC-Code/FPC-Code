@@ -15,8 +15,10 @@ function newSpinFunct(spin, length) {
 	console.log(divisor);
 
 	if (divisor == 0) {
+		console.log("divisor is 0");
 		return spin;
 	}else {
+		console.log("divisor is not 0")
 		var subtractor = divisor * length;
 		var newspin = spin - subtractor
 		return newspin;
