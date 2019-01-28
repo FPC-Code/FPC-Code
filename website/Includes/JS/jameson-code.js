@@ -10,10 +10,10 @@ console.log(fullYear);
 var spin = (fullYear - (Math.pow((day + month), 2)));
 console.log(spin);
 
-function newSpinFunct(spin) {
+function newSpinFunct(spin, length) {
 	while (true) {
 		console.log("in loop");
-		if (spin < charArr.length){
+		if (spin < length){
 			console.log(spin);
 			return spin;
 		}
@@ -25,7 +25,7 @@ function newSpinFunct(spin) {
 }
 
 console.log("before function start");
-var actSpin = newSpinFunct(spin);
+var actSpin = newSpinFunct(spin, charArr.length);
 
 var str = prompt("please enter string");
 function spinChars(spin, str) {
