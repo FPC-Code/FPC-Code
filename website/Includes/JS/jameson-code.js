@@ -26,7 +26,8 @@ function newSpinFunct(spin, length) {
 }
 
 console.log("before function start");
-var length = charArr.length
+var length = charArr.length;
+console.log(length);
 var actSpin = newSpinFunct(spin, length);
 
 var str = prompt("please enter string");
