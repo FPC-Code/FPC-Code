@@ -9,7 +9,7 @@ console.log(fullYear);
 
 var spin = (fullYear - (Math.pow((day + month), 2)));
 console.log(spin);
-
+/*
 function newSpinFunct(spin) {
 	while (true) {
 		console.log("in loop");
@@ -22,6 +22,7 @@ function newSpinFunct(spin) {
 		}
 	}
 }
+*/
 console.log("before function start");
 var actSpin = newSpinFunct(spin);
 
