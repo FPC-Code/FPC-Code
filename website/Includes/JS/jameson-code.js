@@ -18,7 +18,7 @@ function newSpinFunct(spin, length) {
 		console.log("divisor is 0");
 		return spin;
 	}else {
-		console.log("divisor is not 0")
+		console.log(divisor);
 		var subtractor = divisor * length;
 		var newspin = spin - subtractor
 		return newspin;
@@ -26,7 +26,8 @@ function newSpinFunct(spin, length) {
 }
 
 console.log("before function start");
-var actSpin = newSpinFunct(spin, charArr.length);
+var length = charArr.length
+var actSpin = newSpinFunct(spin, length);
 
 var str = prompt("please enter string");
 function spinChars(spin, str) {
