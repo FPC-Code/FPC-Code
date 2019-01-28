@@ -16,7 +16,8 @@ console.log(day);
 console.log(fullYear);
 
 var spin = (fullYear - ((day + month)^2));
-var spin = function newSpinFunct(spin) {
+
+function newSpinFunct(spin) {
 	while (true) {
 		if (spin < charArr.length){
 			return spin
@@ -26,8 +27,10 @@ var spin = function newSpinFunct(spin) {
 		}
 	}
 }
-var str2 = function spinChars(spin) {
-	var str = prompt("please enter string");
+var actSpin = newSpinFunct(spin);
+
+var str = prompt("please enter string");
+function spinChars(spin, str) {
 	var code0 = "0".charCodeAt(0);
 	var codeH = "H".charCodeAt(0);
 	var codeZ = "Z".charCodeAt(0);
@@ -46,4 +49,5 @@ var str2 = function spinChars(spin) {
 	}
 	return newArr.join("");
 }
+var str2 = spinChars(spin, str);
 alert(str2)
