@@ -10,20 +10,20 @@ var month = function month(){
 			return i;
 		}
 	}
-}
+};
 console.log(month);
 console.log(day);
 console.log(fullYear);
 
-var spin = (fullYear - ((day + month)^2));
+var spin = (fullYear - (Math.pow((day + month), 2)));
 
 function newSpinFunct(spin) {
 	while (true) {
 		if (spin < charArr.length){
-			return spin
+			return spin;
 		}
 		else {
-			spin = spin - charArr.length
+			spin = spin - charArr.length;
 		}
 	}
 }
@@ -49,5 +49,5 @@ function spinChars(spin, str) {
 	}
 	return newArr.join("");
 }
-var str2 = spinChars(spin, str);
-alert(str2)
+var str2 = spinChars(actSpin, str);
+alert(str2);
