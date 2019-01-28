@@ -26,9 +26,8 @@ var spin = function newSpinFunct(spin) {
 		}
 	}
 }
-var str = prompt("please enter string");
-
-function spinChars(spin, str) {
+var str2 = function spinChars(spin) {
+	var str = prompt("please enter string");
 	var code0 = "0".charCodeAt(0);
 	var codeH = "H".charCodeAt(0);
 	var codeZ = "Z".charCodeAt(0);
@@ -47,4 +46,4 @@ function spinChars(spin, str) {
 	}
 	return newArr.join("");
 }
-str = spinChars(spin, str);
+alert(str2)
