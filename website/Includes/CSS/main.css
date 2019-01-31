@@ -29,9 +29,6 @@ div.main{
 	text-align: center;
 	width: 100%;
 }
-div.embed{
-	width: 100%;
-}
 #sign-up{
 	text-align: center;
 }
@@ -39,7 +36,7 @@ div.embed{
 	align: center;
 	color: black;
 }
-iframe {
-	display: inline-block;
-	
-}
+/*iframe {
+	position: relative;
+	display: inline;
+}*/
