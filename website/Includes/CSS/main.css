@@ -39,3 +39,7 @@ div.embed{
 	align: center;
 	color: black;
 }
+iframe {
+	display: inline-block;
+	
+}
