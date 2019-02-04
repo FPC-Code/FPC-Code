@@ -12,14 +12,8 @@ h3 h2{
 	color: black;
 	text-align: center;
 }
-/*#meetingtimes{
-	position: absolute;
-	right: 10px;
-	width: 40%;
-}*/
 div.main{
 	width: 100%;
-	/*background-image: url(../../Images/fpclogo.jpg);*/
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: top right;
@@ -34,4 +28,8 @@ div.main{
 }
 iframe {
 	display: inline;
+}
+input[type="text"]{
+	border-width: 1px;
+	border-radius: 5px;
 }
