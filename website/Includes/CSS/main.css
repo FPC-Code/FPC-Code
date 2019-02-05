@@ -35,6 +35,7 @@ input[type="text"]{
 	border-color: rgb(124, 124, 124);
 	border-bottom-style: inset; 
 	border-top-style: solid;
+	font-size: 14pt;
 }
 input[type="email"] {
 	border-width: 1px;
@@ -42,6 +43,7 @@ input[type="email"] {
 	border-color: rgb(124, 124, 124);
 	border-top-style: solid;
 	border-bottom-style: inset;
+	font-size: 14pt;
 }
 /* The container */
 .container {
