@@ -88,7 +88,7 @@ input[type="email"] {
   /* Create the indicator (the dot/circle - hidden when not checked) */
   .checkmark:after {
 	content: "";
-	position: absolute;
+	position: relative;
 	display: none;
   }
   
