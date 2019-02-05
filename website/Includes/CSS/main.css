@@ -59,14 +59,14 @@ input[type="email"] {
   
   /* Hide the browser's default radio button */
   .container input {
-	position: absolute;
+	position: relative;
 	opacity: 0;
 	cursor: pointer;
   }
   
   /* Create a custom radio button */
   .checkmark {
-	position: absolute;
+	position: relative;
 	top: 0;
 	left: 0;
 	height: 25px;
