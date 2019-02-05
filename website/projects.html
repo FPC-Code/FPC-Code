@@ -93,34 +93,51 @@
 					  What do you need?
 					</h2><br><br>
 				  
-				  
-					<label for="New-Website">New Website</label>
-					<input type="radio" value="New-Website" name="webtype"><br>
-					<label for="Maintenance-on-a-Website">Maintenance on a Website</label>
-					<input type="radio" value="Maintenance-on-a-Website" name="webtype"><br>
-					<label for="One-Time-Update">One Time Update</label>
-					<input type="radio" value="One-Time-Update" name="webtype"><br><br>
-				  
+					<label class="container">New Website
+						<input type="radio" name="webtype">
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">Maintenance on a Website
+						<input type="radio" name="webtype">
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">One Time Update
+						<input type="radio" name="webtype">
+						<span class="checkmark"></span>
+					</label>
+
+
 					<h2>
 					  Do you have access to the website's HTML?
 					</h2><br>
 				  
-					<label for="Yes">Yes</label><br>
-					<input type="radio" value="yes" name="access"><br>
-					<label for="No">No</label><br>
-					<input type="radio" value="no" name="access"><br><br>
+					<label class="container">Yes
+						<input type="radio" name="access">
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">No
+						<input type="radio" name="access">
+						<span class="checkmark"></span>
+					</label>
 				  
 					<h2>
 					  What kind of website is it?
 					</h2><br>
-				  
-					<label for="Informational">Informational</label><br>
-					<input type="radio" value="Informational" name="sitetype"><br>
-					<label for="Web-Form">Web Form</label><br>
-					<input type="radio" value="Web-Form" name="sitetype"><br>
-					<label for="Other">Other</label><br>
-					<input type="radio" value="Other" name="sitetype" onclick="addother()" id="otherbutton"><br><br>
-				  
+
+					<label class="container">Informational
+						<input type="radio" name="site-type">
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">Web Form
+						<input type="radio" name="site-type">
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">Other
+						<input type="radio" name="site-type">
+						<span class="checkmark"></span>
+					</label>
+
+
 					<h2 class="other">
 					  If other, what kind?
 					</h2><br>

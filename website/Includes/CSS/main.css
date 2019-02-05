@@ -43,9 +43,6 @@ input[type="email"] {
 	border-top-style: solid;
 	border-bottom-style: inset;
 }
-input[type="radio"] {
-}
-
 /* The container */
 .container {
 	display: block;
@@ -96,16 +93,28 @@ input[type="radio"] {
   }
   
   /* Show the indicator (dot/circle) when checked */
-  .container input:checked ~ .checkmark:after {
-	display: block;
-  }
-  
-  /* Style the indicator (dot/circle) */
-  .container .checkmark:after {
-	   top: 9px;
-	  left: 9px;
-	  width: 8px;
-	  height: 8px;
-	  border-radius: 50%;
-	  background: #eee;
-  }
+  @keyframes zoom {
+	from {
+    	top: 0px;
+		left: 0px;
+		width: 25px;
+		height: 25px;
+    }
+    to {
+    	top: 9px;
+		left: 9px;
+		width: 8px;
+		height: 8px;
+    }
+}
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	animation-name: zoom;
+    animation-duration: .2s;
+	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #eee;	
+}
