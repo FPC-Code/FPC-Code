@@ -33,16 +33,14 @@ input[type="text"]{
 	border-width: 1px;
 	border-radius: 5px;
 	border-color: rgb(124, 124, 124);
-	border-bottom-style: inset; 
-	border-top-style: solid;
+	border-style: inset; 
 	font-size: 14pt;
 }
 input[type="email"] {
 	border-width: 1px;
 	border-radius: 5px;
 	border-color: rgb(124, 124, 124);
-	border-top-style: solid;
-	border-bottom-style: inset;
+	border-style: inset;
 	font-size: 14pt;
 }
 /* The container */
