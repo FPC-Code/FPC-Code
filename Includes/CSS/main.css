@@ -18,8 +18,13 @@ body {
 	font-size: 0px;
 }
 
+.main {
+	margin-bottom: 250px;
+}
+
 .main h1,
-.wrapper h1 {
+.wrapper h1,
+.form-page h1 {
 	font-size: 56px;
 	font-weight: bold;
 	background-color: #212922;
@@ -30,7 +35,8 @@ body {
 	text-align: center;
 }
 
-.main a {
+.main a,
+.form-page a {
 	text-decoration: none;
 	color: #f0f1eb;
 	background-color: #6e7869;
@@ -40,17 +46,20 @@ body {
 	font-size: 18px;
 }
 
-.main ul {
+.main ul,
+.form-page ul {
 	text-align: center;
 }
 
-.main li {
+.main li,
+.form-page li {
 	display: inline-block;
 	margin: 0px 50px;
 	vertical-align: top;
 }
 
-div.main {
+div.main,
+div.form-page {
 	width: 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -279,7 +288,7 @@ h2 {
 
 .text {
 	background-color: #778e80;
-	max-width: 750px;
+	max-width: 400px;
 	min-width: 400px;
 	padding-top: 25px;
 	padding-bottom: 35px;
@@ -325,6 +334,8 @@ h2 {
 	max-width: 750px;
 	background-color: #778e80;
 	margin: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	text-align: center;
 	padding-bottom: 250px;
 	border-top-left-radius: 5px;
@@ -341,10 +352,6 @@ h2 {
 	font-size: 34px;
 	padding-bottom: 0px;
 	margin-bottom: 25px;
-}
-
-.form {
-	margin-top: 0px;
 }
 
 .form h3 {
