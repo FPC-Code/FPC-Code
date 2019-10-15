@@ -35,6 +35,11 @@ nav {
 	letter-spacing: 3px;
 	font-weight: normal;
 	font-size: 14px;
+	transition: 0.5s;
+}
+
+.nav-links a:hover {
+	color: #939a9c;
 }
 
 .burger {
