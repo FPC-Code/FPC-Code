@@ -68,9 +68,8 @@ div.form-page {
 	background-size: 40%;
 }
 
-.wrapper {
-	text-align: center;
-	width: 100%;
+.signin {
+	margin-top: 50px;
 }
 
 iframe {
