@@ -390,6 +390,19 @@ h2 {
 	padding: 0px;
 }
 
+.foot {
+	background-color: #212922;
+	height: 25vh;
+	max-height: 25vh;
+}
+
+.foot p {
+	color: #f0f1eb;
+	font-size: 14px;
+	padding: 50px 0px;
+	padding-left: 50px;
+}
+
 input[type="button"] {
 	width: 250px;
 	height: 75px;
