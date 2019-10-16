@@ -301,7 +301,8 @@ h2 {
 .text p {
 	color: #f0f1eb;
 	text-align: center;
-	padding: 0px 0px;
+	padding: 0;
+	margin: 0;
 	margin-bottom: 25px;
 	font-size: 20px;
 	line-height: 30px;
