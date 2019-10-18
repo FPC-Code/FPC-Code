@@ -8,24 +8,30 @@
 
 		<link rel="stylesheet" href="./Includes/CSS/menu.css" />
 		<link rel="stylesheet" href="./Includes/CSS/main.css" />
-		<link rel="shortcut icon" type="image/x-icon" href="./Images/fpc_code_logo.png" />
+		<link
+			rel="shortcut icon"
+			type="image/x-icon"
+			href="./Images/fpc_code_logo.png"
+		/>
 		<link
 			href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap"
 			rel="stylesheet"
 		/>
 
-		<title>Join</title>
+		<title>FPC Code - Join</title>
 	</head>
 
 	<body>
 		<div id="menu">
 			<nav>
 				<div class="logo">
-					<a href="./index.html"><h4>FPC Coding Club</h4></a>
+					<a href="./">
+						<h4>FPC Code</h4>
+					</a>
 				</div>
 
 				<ul class="nav-links">
-					<li><a href="./index.html">Home</a></li>
+					<li><a href="./">Home</a></li>
 					<li><a href="./about.html">About</a></li>
 					<li><a href="./officers.html">Officers</a></li>
 					<li><a href="./projects.html">Projects</a></li>
@@ -57,12 +63,13 @@
 							<p>
 								In order to attend club meetings, you
 								<strong>MUST</strong> be a student of
-								<strong>Flagler Palm Coast High School</strong>, there are
-								<strong>NO</strong> exceptions.
+								<strong>Flagler Palm Coast High School</strong>,
+								there are <strong>NO</strong> exceptions.
 							</p>
 
 							<p>
-								You also need a working computer capable of running programs such as
+								You also need a working computer capable of
+								running programs such as
 								<strong>Visual Studio Code</strong>
 								after school hours.
 							</p>
@@ -75,7 +82,8 @@
 				<h2>Club Sign-Up</h2>
 
 				<p>
-					Fill out the form below to be able to show up to the next meeting.
+					Fill out the form below to be able to show up to the next
+					meeting.
 				</p>
 			</div>
 
@@ -83,49 +91,72 @@
 				<center>
 					<form
 						method="POST"
-						action="https://formspree.io/galvantua@gmail.com"
-						onsubmit="redirect('./thanks.html')"
+						action="./Includes/PHP/join.php"
+						onsubmit="redirect('./thanks-join.html')"
 					>
-						<input type="hidden" name="_subject" value="New Website Request" />
-						<!--<input type="hidden" name="_next" value="https://galvantua.github.io/CCWebstite/website/thanks.html" />-->
-						<!--<input type="hidden" name="_cc" value="wilseytyler@gmail.com,benjammincruz@gmail.com,wanyea.barbel@aol.com" />-->
+						<input
+							type="hidden"
+							name="subject"
+							value="New Member"
+						/>
 
 						<h3>Full Name</h3>
 
-						<input type="text" name="name" placeholder="John Joseph" size="24px" />
+						<input
+							type="text"
+							name="name"
+							placeholder="John Joseph"
+							size="24px"
+						/>
 
 						<h3>School Email</h3>
 
 						<input
 							type="email"
-							name="_replyto"
+							name="email"
 							placeholder="johnjos1234@flaglercps.org"
 							size="24px"
 						/>
 
-						<h3>What Grade are You In?</h3>
+						<h3>Current Grade</h3>
 
 						<label class="container"
 							>9th Grade&nbsp;&nbsp;&nbsp;&nbsp;
-							<input type="radio" name="webtype" value="9th Grade - Freshman" />
+							<input
+								type="radio"
+								name="grade"
+								value="9th Grade - Freshman"
+							/>
 							<span class="checkmark"></span>
 						</label>
 
 						<label class="container"
 							>10th Grade&nbsp;&nbsp;&nbsp;&nbsp;
-							<input type="radio" name="webtype" value="10th Grade - Sophomore" />
+							<input
+								type="radio"
+								name="grade"
+								value="10th Grade - Sophomore"
+							/>
 							<span class="checkmark"></span>
 						</label>
 
 						<label class="container"
 							>11th Grade&nbsp;&nbsp;&nbsp;&nbsp;
-							<input type="radio" name="webtype" value="11th Grade - Junior" />
+							<input
+								type="radio"
+								name="grade"
+								value="11th Grade - Junior"
+							/>
 							<span class="checkmark"></span>
 						</label>
 
 						<label class="container"
 							>12th Grade&nbsp;&nbsp;&nbsp;&nbsp;
-							<input type="radio" name="webtype" value="12th Grade - Senior" />
+							<input
+								type="radio"
+								name="grade"
+								value="12th Grade - Senior"
+							/>
 							<span class="checkmark"></span>
 						</label>
 
