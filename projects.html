@@ -8,7 +8,11 @@
 
 		<link rel="stylesheet" href="./Includes/CSS/menu.css" />
 		<link rel="stylesheet" href="./Includes/CSS/main.css" />
-		<link rel="shortcut icon" type="image/x-icon" href="./Images/fpc_code_logo.png" />
+		<link
+			rel="shortcut icon"
+			type="image/x-icon"
+			href="./Images/fpc_code_logo.png"
+		/>
 		<link
 			href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap"
 			rel="stylesheet"
@@ -21,11 +25,13 @@
 		<div id="menu">
 			<nav>
 				<div class="logo">
-					<a href="./index.html"><h4>FPC Code</h4></a>
+					<a href="./">
+						<h4>FPC Code</h4>
+					</a>
 				</div>
 
 				<ul class="nav-links">
-					<li><a href="./index.html">Home</a></li>
+					<li><a href="./">Home</a></li>
 					<li><a href="./about.html">About</a></li>
 					<li><a href="./officers.html">Officers</a></li>
 					<li><a href="./projects.html">Projects</a></li>
@@ -42,7 +48,10 @@
 		</div>
 
 		<div class="home-image">
-			<img src="./Images/code_projects_1.jpg" alt="People working on computers." />
+			<img
+				src="./Images/code_projects_1.jpg"
+				alt="People working on computers."
+			/>
 		</div>
 
 		<div class="form-page">
@@ -56,8 +65,9 @@
 						<ul>
 							<li>
 								<p>
-									We are currently working on a website for the Model UN club in
-									our school. You can view our progress <a href="#">here</a>.
+									We are currently working on a website for
+									the Model UN club in our school. You can
+									view our progress <a href="#">here</a>.
 								</p>
 							</li>
 						</ul>
@@ -71,8 +81,9 @@
 						<ul>
 							<li>
 								<p>
-									We have created and maintained this website from the start of
-									Coding Club in the school year of 2018-19.
+									We have created and maintained this website
+									from the start of Coding Club in the school
+									year of 2018-19.
 								</p>
 							</li>
 						</ul>
@@ -94,16 +105,22 @@
 						<center>
 							<form
 								method="POST"
-								action="https://formspree.io/galvantua@gmail.com"
+								action="./Includes/PHP/process.php"
 								onsubmit="redirect('./thanks.html')"
 							>
-								<input type="hidden" name="_subject" value="New Website Request" />
-								<!--<input type="hidden" name="_next" value="https://galvantua.github.io/CCWebstite/website/thanks.html" />-->
-								<!--<input type="hidden" name="_cc" value="wilseytyler@gmail.com,benjammincruz@gmail.com,wanyea.barbel@aol.com" />-->
-
+								<input
+									type="hidden"
+									name="_subject"
+									value="New Website Request"
+								/>
 								<h3>Full Name</h3>
 
-								<input type="text" name="name" placeholder="John Doe" size="24px" />
+								<input
+									type="text"
+									name="name"
+									placeholder="John Doe"
+									size="24px"
+								/>
 
 								<h3>Email</h3>
 
@@ -118,12 +135,17 @@
 
 								<label class="container"
 									>New Website&nbsp;&nbsp;&nbsp;&nbsp;
-									<input type="radio" name="webtype" value="New Website" />
+									<input
+										type="radio"
+										name="webtype"
+										value="New Website"
+									/>
 									<span class="checkmark"></span>
 								</label>
 
 								<label class="container"
-									>Maintenance on a Website&nbsp;&nbsp;&nbsp;&nbsp;
+									>Maintenance on a
+									Website&nbsp;&nbsp;&nbsp;&nbsp;
 									<input
 										type="radio"
 										name="webtype"
@@ -134,7 +156,11 @@
 
 								<label class="container"
 									>One Time Update&nbsp;&nbsp;&nbsp;&nbsp;
-									<input type="radio" name="webtype" value="One Time Update" />
+									<input
+										type="radio"
+										name="webtype"
+										value="One Time Update"
+									/>
 									<span class="checkmark"></span>
 								</label>
 
@@ -144,7 +170,11 @@
 
 								<label class="container"
 									>Yes&nbsp;&nbsp;&nbsp;&nbsp;
-									<input type="radio" name="access" value="yes" />
+									<input
+										type="radio"
+										name="access"
+										value="yes"
+									/>
 
 									<span class="checkmark"></span>
 								</label>
@@ -152,7 +182,11 @@
 								<label class="container"
 									>No&nbsp;&nbsp;&nbsp;&nbsp;
 
-									<input type="radio" name="access" value="no" />
+									<input
+										type="radio"
+										name="access"
+										value="no"
+									/>
 
 									<span class="checkmark"></span>
 								</label>
@@ -162,7 +196,11 @@
 								<label class="container"
 									>Informational&nbsp;&nbsp;&nbsp;&nbsp;
 
-									<input type="radio" name="site-type" value="Informational" />
+									<input
+										type="radio"
+										name="site-type"
+										value="Informational"
+									/>
 
 									<span class="checkmark"></span>
 								</label>
@@ -170,7 +208,11 @@
 								<label class="container"
 									>Web Form&nbsp;&nbsp;&nbsp;&nbsp;
 
-									<input type="radio" name="site-type" value="Web Form" />
+									<input
+										type="radio"
+										name="site-type"
+										value="Web Form"
+									/>
 
 									<span class="checkmark"></span>
 								</label>
@@ -178,7 +220,11 @@
 								<label class="container"
 									>Other&nbsp;&nbsp;&nbsp;&nbsp;
 
-									<input type="radio" name="site-type" value="Other" />
+									<input
+										type="radio"
+										name="site-type"
+										value="Other"
+									/>
 
 									<span class="checkmark"></span>
 								</label>
