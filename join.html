@@ -83,11 +83,7 @@
 
 			<div class="form">
 				<center>
-					<form
-						method="POST"
-						action="./Includes/PHP/join.php"
-						onsubmit="redirect('./thanks-join.html')"
-					>
+					<form method="POST" action="./Includes/PHP/join.php">
 						<input type="hidden" name="subject" value="New Member" />
 
 						<h3>Full Name</h3>
@@ -129,7 +125,7 @@
 							<span class="checkmark"></span>
 						</label>
 
-						<input type="submit" value="Submit" />
+						<input type="submit" name="submit" value="Submit" />
 					</form>
 				</center>
 			</div>

@@ -13,9 +13,12 @@ if (isset($_POST['submit'])) {
 	$grade = $_POST['grade'];
 	$header = "From: ".$email;
 	$body = $name." has joined Coding Club!: \n\n
-	
 	Grade:	".$grade."\n
 	Email:	".$email;
 
-	mail($email_list, $subject, $body, $header);
+	mail($email_list,$subject,$body,$header);
+	header("Location: ../../thanks-join.html");
+} else {
+	header("Location: ../../sorry.html");
 }
+?>

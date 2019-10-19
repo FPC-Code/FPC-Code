@@ -95,7 +95,6 @@
 							<form
 								method="POST"
 								action="./Includes/PHP/process.php"
-								onsubmit="redirect('./thanks.html')"
 							>
 								<input type="hidden" name="_subject" value="New Website Request" />
 								<h3>Full Name</h3>
@@ -190,7 +189,11 @@
 									height="50px"
 								/>
 
-								<input type="submit" value="Submit" />
+								<input
+									type="submit"
+									value="Submit"
+									name="submit"
+								/>
 							</form>
 						</center>
 					</div>
