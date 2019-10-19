@@ -14,3 +14,4 @@ if (isset($_POST['submit'])) {
 
 	mail($mailto, "Website Request", "\n".$body."\n\n".$signuptype."\n".$webtype."\n\n".$webtypeother."\n\n".$access, $header);
 }
+?>
