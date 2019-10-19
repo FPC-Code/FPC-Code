@@ -9,10 +9,10 @@ if (isset($_POST['submit'])) {
 	$access = $_POST['access'];
 
 	$mailto = "galvantua@gmail.com";
-	$header = "From: ".$email;
+	$header = "From: noreply@codefpc.com";
 	$body = $name." has requested a website:";
 
-	mail($mailto, "Website Request", "\n".$body."\n\n".$signuptype."\n".$webtype."\n\n".$webtypeother."\n\n".$access, $header);
+	mail($mailto, "Website Request", "\n".$body."\n\n".$email."\n\n".$signuptype."\n".$webtype."\n\n".$webtypeother."\n\n".$access, $header);
 	header("Location: ../../thanks.html");
 } else {
 	header("Location: ../../sorry.html");
