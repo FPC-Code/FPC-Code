@@ -10,7 +10,8 @@ header {
 }
 
 .logo,
-.nav-links {
+.nav-links,
+.buttons {
 	display: flex;
 }
 
@@ -19,6 +20,9 @@ header {
 }
 
 .logo {
+	color: #f0f1eb;
+	font-size: 24px;
+	text-decoration: none;
 	font-weight: 400;
 	margin: 5px;
 }
@@ -36,6 +40,17 @@ nav {
 	color: #f0f1eb;
 	font-size: 18px;
 	text-decoration: none;
+}
+
+.buttons {
+	flex: 1;
+	justify-content: flex-end;
+	list-style: none;
+}
+
+.button img {
+	width: 35px;
+	margin: 15px;
 }
 
 /* nav {
