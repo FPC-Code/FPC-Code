@@ -17,5 +17,8 @@ if (isset($_POST['submit'])) {
 	Email:	".$email;
 
 	mail($email_list,$subject,$body,$header);
+	header("Location: ../../");
+} else {
+	header("Location: ../../sorry.html");
 }
 ?>

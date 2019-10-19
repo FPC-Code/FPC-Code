@@ -13,5 +13,8 @@ if (isset($_POST['submit'])) {
 	$body = $name." has requested a website:";
 
 	mail($mailto, "Website Request", "\n".$body."\n\n".$signuptype."\n".$webtype."\n\n".$webtypeother."\n\n".$access, $header);
+	header("Location: ../../");
+} else {
+	header("Location: ../../sorry.html");
 }
 ?>
