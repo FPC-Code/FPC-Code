@@ -396,21 +396,24 @@ h2 {
 }
 
 input[type="button"] {
-	width: 250px;
-	height: 75px;
-	border: 0px;
-	font-size: 26px;
 	background-color: #6e7869;
-	color: #f0f1eb;
-	cursor: pointer;
-	border-radius: 5px;
-	font-weight: bold;
+	border: 0px;
 	text-align: center;
 	transition: 0.25s;
+	cursor: pointer;
+	color: #f0f1eb;
 }
 
 input[type="button"]:hover {
 	background-color: #939a9c;
+}
+
+.link input[type="button"] {
+	width: 250px;
+	height: 75px;
+	font-size: 26px;
+	border-radius: 5px;
+	font-weight: bold;
 }
 
 .sorry p {

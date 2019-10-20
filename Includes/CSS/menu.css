@@ -48,9 +48,12 @@ nav {
 	list-style: none;
 }
 
-.button img {
-	width: 35px;
+.buttons input[type="button"] {
+	width: 100px;
+	height: 50px;
 	margin: 15px;
+	border-radius: 10px;
+	font-size: 24px;
 }
 
 /* nav {
