@@ -7,9 +7,12 @@ header {
 	padding: 0vh 5vw;
 	margin: auto;
 	align-items: center;
+	position: fixed;
+	z-index: 9999;
+	top: 0;
 }
 
-.logo,
+.logo-container,
 .nav-links,
 .buttons {
 	display: flex;
@@ -17,6 +20,7 @@ header {
 
 .logo-container {
 	flex: 1;
+	align-items: center;
 }
 
 .logo {
@@ -25,6 +29,11 @@ header {
 	text-decoration: none;
 	font-weight: 400;
 	margin: 5px;
+}
+
+.logo-container img {
+	width: 50px;
+	margin: 0px 15px;
 }
 
 nav {
@@ -55,7 +64,7 @@ nav {
 
 .buttons input[type="button"] {
 	width: 100px;
-	height: 50px;
+	height: 35px;
 	margin: 15px;
 	border-radius: 10px;
 	font-size: 24px;
