@@ -3,7 +3,7 @@ header {
 	display: flex;
 	background: #212922;
 	width: 100%;
-	height: 10vh;
+	min-height: 10vh;
 	padding: 0vh 5vw;
 	margin: auto;
 	align-items: center;
@@ -36,10 +36,15 @@ nav {
 	list-style: none;
 }
 
+.nav-links a:hover {
+	color: #939a9c;
+}
+
 .nav-link {
 	color: #f0f1eb;
 	font-size: 18px;
 	text-decoration: none;
+	transition: 0.25s;
 }
 
 .buttons {
@@ -56,54 +61,7 @@ nav {
 	font-size: 24px;
 }
 
-/* nav {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	min-height: 10vh;
-	background-color: #212922;
-	top: 0;
-	left: 0;
-	z-index: 9999;
-	width: 100%;
-	overflow: hidden;
-	position: fixed;
-}
-
-.logo a {
-	color: #f0f1eb;
-	text-transform: uppercase;
-	letter-spacing: 5px;
-	font-size: 20px;
-	font-family: "Comfortaa", cursive;
-	text-decoration: none;
-}
-
-.nav-links {
-	display: flex;
-	justify-content: space-around;
-	width: 40%;
-}
-
-.nav-links li {
-	list-style: none;
-	font-family: "Comfortaa", sans-serif;
-}
-
-.nav-links a {
-	color: #f0f1eb;
-	text-decoration: none;
-	letter-spacing: 3px;
-	font-weight: normal;
-	font-size: 14px;
-	transition: 0.25s;
-}
-
-.nav-links a:hover {
-	color: #939a9c;
-}
-
-.burger {
+/* .burger {
 	display: none;
 	cursor: pointer;
 }
@@ -114,12 +72,6 @@ nav {
 	background-color: #f0f1eb;
 	margin: 5px;
 	transition: all 0.3s ease;
-}
-
-@media screen and (max-width: 1024px) {
-	.nav-links {
-		width: 60%;
-	}
 }
 
 @media screen and (max-width: 768px) {
