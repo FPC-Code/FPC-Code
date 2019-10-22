@@ -8,11 +8,7 @@
 
 		<link rel="stylesheet" href="./Includes/CSS/menu.css" />
 		<link rel="stylesheet" href="./Includes/CSS/main.css" />
-		<link
-			rel="shortcut icon"
-			type="image/x-icon"
-			href="./Images/fpc_code_logo.png"
-		/>
+		<link rel="shortcut icon" type="image/x-icon" href="./Images/fpc_code_logo.png" />
 		<link
 			href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap"
 			rel="stylesheet"
@@ -22,43 +18,50 @@
 	</head>
 
 	<body>
-		<div id="menu">
-			<nav>
-				<div class="logo">
-					<a href="./">
-						<h4>FPC Code</h4>
-					</a>
-				</div>
+		<header>
+			<div class="logo-container">
+				<a href="./index.html">
+					<img src="./Images/fpc_code_logo.png" alt="FPC Code Logo" />
+				</a>
 
+				<h4 class="logo">FPC Code</h4>
+			</div>
+
+			<nav>
 				<ul class="nav-links">
-					<li><a href="./">Home</a></li>
-					<li><a href="./about.html">About</a></li>
-					<li><a href="./officers.html">Officers</a></li>
-					<li><a href="./projects.html">Projects</a></li>
-					<li><a href="./join.html">Join</a></li>
-					<li><a href="./sign-in.html">Sign In</a></li>
+					<li><a class="nav-link" href="./about.html">About</a></li>
+					<li><a class="nav-link" href="./officers.html">Officers</a></li>
+					<li><a class="nav-link" href="./projects.html">Projects</a></li>
 				</ul>
 
 				<div class="burger">
-					<!-- for the screen size changes-->
 					<div class="line1"></div>
 					<div class="line2"></div>
 					<div class="line3"></div>
 				</div>
 			</nav>
-		</div>
 
-		<div class="home-image">
-			<img
-				src="./Images/code_officers_1.jpg"
-				alt="Group of people sitting and standing."
-			/>
-		</div>
+			<ul class="buttons">
+				<li>
+					<input type="button" onclick="redirect('./join.html')" value="Join" />
+				</li>
+				<li>
+					<input type="button" onclick="redirect('./sign-in.html')" value="Sign In" />
+				</li>
+			</ul>
+		</header>
 
-		<div class="main">
+		<main>
+			<div class="home-image">
+				<img
+					src="./Images/code_officers_1.jpg"
+					alt="Group of people sitting and standing."
+				/>
+			</div>
+
 			<h1>Meet Our Officers</h1>
 
-			<div id="officers">
+			<section id="officers">
 				<h2>Our Officers</h2>
 
 				<div id="officers-list">
@@ -80,9 +83,7 @@
 							<h4>Morgan Hale</h4>
 
 							<div class="information">
-								<a href="mailto:morgan@thesfcc.com"
-									>morgan@thesfcc.com</a
-								>
+								<a href="mailto:morgan@thesfcc.com">morgan@thesfcc.com</a>
 							</div>
 						</li>
 						<li>
@@ -102,9 +103,7 @@
 							<h4>Alan Hale</h4>
 
 							<div class="information">
-								<a href="mailto:alan@thesfcc.com"
-									>alan@thesfcc.com</a
-								>
+								<a href="mailto:alan@thesfcc.com">alan@thesfcc.com</a>
 							</div>
 						</li>
 						<!-- <li>
@@ -137,8 +136,22 @@
 						value="Show All"
 					/>
 				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="footer-logo">
+				<img src="./Images/fpc_code_logo.png" alt="FPC Code Logo" />
 			</div>
-		</div>
+
+			<div class="footer-button">
+				<input type="button" onclick="redirect('./join.html')" value="Join Now" />
+			</div>
+
+			<div class="footer-text">
+				<h4>FPC Code</h4>
+			</div>
+		</footer>
 
 		<script src="./Includes/JS/script.js"></script>
 		<script src="./Includes/JS/menu.js"></script>

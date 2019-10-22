@@ -8,11 +8,7 @@
 
 		<link rel="stylesheet" href="./Includes/CSS/menu.css" />
 		<link rel="stylesheet" href="./Includes/CSS/main.css" />
-		<link
-			rel="shortcut icon"
-			type="image/x-icon"
-			href="./Images/fpc_code_logo.png"
-		/>
+		<link rel="shortcut icon" type="image/x-icon" href="./Images/fpc_code_logo.png" />
 		<link
 			href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap"
 			rel="stylesheet"
@@ -22,21 +18,20 @@
 	</head>
 
 	<body>
-		<div id="menu">
-			<nav>
-				<div class="logo">
-					<a href="./">
-						<h4>FPC Code</h4>
-					</a>
-				</div>
+		<header>
+			<div class="logo-container">
+				<a href="./index.html">
+					<img src="./Images/fpc_code_logo.png" alt="FPC Code Logo" />
+				</a>
 
+				<h4 class="logo">FPC Code</h4>
+			</div>
+
+			<nav>
 				<ul class="nav-links">
-					<li><a href="./">Home</a></li>
-					<li><a href="./about.html">About</a></li>
-					<li><a href="./officers.html">Officers</a></li>
-					<li><a href="./projects.html">Projects</a></li>
-					<li><a href="./join.html">Join</a></li>
-					<li><a href="./sign-in.html">Sign In</a></li>
+					<li><a class="nav-link" href="./about.html">About</a></li>
+					<li><a class="nav-link" href="./officers.html">Officers</a></li>
+					<li><a class="nav-link" href="./projects.html">Projects</a></li>
 				</ul>
 
 				<div class="burger">
@@ -45,51 +40,57 @@
 					<div class="line3"></div>
 				</div>
 			</nav>
-		</div>
 
-		<div class="home-image">
-			<img src="./Images/code_about_1.jpg" alt="Code on a screen." />
-		</div>
+			<ul class="buttons">
+				<li>
+					<input type="button" onclick="redirect('./join.html')" value="Join" />
+				</li>
+				<li>
+					<input type="button" onclick="redirect('./sign-in.html')" value="Sign In" />
+				</li>
+			</ul>
+		</header>
 
-		<div class="main">
+		<main>
+			<div class="home-image">
+				<img src="./Images/code_about_1.jpg" alt="Code on a screen." />
+			</div>
+
 			<h1>Learn About Our Club</h1>
 
-			<div id="who-we-are">
+			<section id="who-we-are">
 				<h2>Who We Are</h2>
 
 				<div class="text">
 					<ul>
 						<li>
 							<p>
-								We are a student run organization at Flagler
-								Palm Coast High School.
+								We are a student run organization at Flagler Palm Coast High School.
 							</p>
 
 							<p>
-								We are full of kind and welcoming members and
-								officers who all share the same love for web
-								development.
+								We are full of kind and welcoming members and officers who all share
+								the same love for web development.
 							</p>
 						</li>
 					</ul>
 				</div>
-			</div>
+			</section>
 
-			<div id="what-we-do">
+			<section id="what-we-do">
 				<h2>What We Do</h2>
 
 				<div class="text">
 					<ul>
 						<li>
 							<p>
-								We teach students the basics of web development
-								and how they can use these skills.
+								We teach students the basics of web development and how they can use
+								these skills.
 							</p>
 
 							<p>
-								Each member can work on their own personal
-								website, or work collectively as a group on the
-								club's website.
+								Each member can work on their own personal website, or work
+								collectively as a group on the club's website.
 							</p>
 						</li>
 					</ul>
@@ -99,22 +100,20 @@
 					<ul>
 						<li>
 							<p>
-								We also take on community submissions for
-								websites and help turn their idea into a
-								reality.
+								We also take on community submissions for websites and help turn
+								their idea into a reality.
 							</p>
 
 							<p>
-								This is not for a profit, but is instead
-								community service, which can be put on resumes
-								and applications.
+								This is not for a profit, but is instead community service, which
+								can be put on resumes and applications.
 							</p>
 						</li>
 					</ul>
 				</div>
-			</div>
+			</section>
 
-			<div id="when-we-meet">
+			<section id="when-we-meet">
 				<h2>When We Meet</h2>
 
 				<div class="text">
@@ -122,9 +121,8 @@
 						<li>
 							<p>
 								We hold meetings every
-								<strong>Tuesday</strong> after school (excluding
-								days off of school) from
-								<strong>2:25 to 3:30-4:00</strong>.
+								<strong>Tuesday</strong> after school (excluding days off of school)
+								from <strong>2:25 to 3:30-4:00</strong>.
 							</p>
 
 							<p>
@@ -135,8 +133,22 @@
 						</li>
 					</ul>
 				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="footer-logo">
+				<img src="./Images/fpc_code_logo.png" alt="FPC Code Logo" />
 			</div>
-		</div>
+
+			<div class="footer-button">
+				<input type="button" onclick="redirect('./join.html')" value="Join Now" />
+			</div>
+
+			<div class="footer-text">
+				<h4>FPC Code</h4>
+			</div>
+		</footer>
 
 		<script src="./Includes/JS/script.js"></script>
 		<script src="./Includes/JS/menu.js"></script>

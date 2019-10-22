@@ -8,11 +8,7 @@
 
 		<link rel="stylesheet" href="./Includes/CSS/menu.css" />
 		<link rel="stylesheet" href="./Includes/CSS/main.css" />
-		<link
-			rel="shortcut icon"
-			type="image/x-icon"
-			href="./Images/fpc_code_logo.png"
-		/>
+		<link rel="shortcut icon" type="image/x-icon" href="./Images/fpc_code_logo.png" />
 		<link
 			href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap"
 			rel="stylesheet"
@@ -22,21 +18,20 @@
 	</head>
 
 	<body>
-		<div id="menu">
-			<nav>
-				<div class="logo">
-					<a href="./">
-						<h4>FPC Code</h4>
-					</a>
-				</div>
+		<header>
+			<div class="logo-container">
+				<a href="./index.html">
+					<img src="./Images/fpc_code_logo.png" alt="FPC Code Logo" />
+				</a>
 
+				<h4 class="logo">FPC Code</h4>
+			</div>
+
+			<nav>
 				<ul class="nav-links">
-					<li><a href="./">Home</a></li>
-					<li><a href="./about.html">About</a></li>
-					<li><a href="./officers.html">Officers</a></li>
-					<li><a href="./projects.html">Projects</a></li>
-					<li><a href="./join.html">Join</a></li>
-					<li><a href="./sign-in.html">Sign In</a></li>
+					<li><a class="nav-link" href="./about.html">About</a></li>
+					<li><a class="nav-link" href="./officers.html">Officers</a></li>
+					<li><a class="nav-link" href="./projects.html">Projects</a></li>
 				</ul>
 
 				<div class="burger">
@@ -45,17 +40,26 @@
 					<div class="line3"></div>
 				</div>
 			</nav>
-		</div>
 
-		<div class="home-image">
-			<img src="./Images/code_home_1.jpg" alt="Code on a screen." />
-		</div>
+			<ul class="buttons">
+				<li>
+					<input type="button" onclick="redirect('./join.html')" value="Join" />
+				</li>
+				<li>
+					<input type="button" onclick="redirect('./sign-in.html')" value="Sign In" />
+				</li>
+			</ul>
+		</header>
 
-		<div class="main">
-			<div class="sorry">
-				<h2>
-					We Are So Sorry!
-				</h2>
+		<main>
+			<div class="home-image">
+				<img src="./Images/code_home_1.jpg" alt="Code on a screen." />
+			</div>
+
+			<h1>We Are So Sorry!</h1>
+
+			<section id="sorry">
+				<h2>Something Broke</h2>
 
 				<div class="text">
 					<ul>
@@ -72,38 +76,42 @@
 						</li>
 					</ul>
 				</div>
-			</div>
-			<div id="join-today">
+			</section>
+
+			<section id="join-today">
 				<h2>Join Today</h2>
 
 				<div class="text">
 					<ul>
 						<li>
 							<p>
-								Before you can attend meetings, you need to fill
-								out a form to let us know a little bit about
-								yourself.
+								Before you can attend meetings, you need to fill out a form to let
+								us know a little bit about yourself.
 							</p>
 
 							<p>
-								Once we receive your submission, we expect to
-								see you at the next meeting.
+								Once we receive your submission, we expect to see you at the next
+								meeting.
 							</p>
 						</li>
 					</ul>
 				</div>
+			</section>
+		</main>
 
-				<div class="link" id="join-link">
-					<input
-						type="button"
-						onclick="redirect('./join.html')"
-						value="Join Now"
-					/>
-				</div>
+		<footer>
+			<div class="footer-logo">
+				<img src="./Images/fpc_code_logo.png" alt="FPC Code Logo" />
 			</div>
-		</div>
 
-		<div class="foot"></div>
+			<div class="footer-button">
+				<input type="button" onclick="redirect('./index.html')" value="Home" />
+			</div>
+
+			<div class="footer-text">
+				<h4>FPC Code</h4>
+			</div>
+		</footer>
 
 		<script src="./Includes/JS/script.js"></script>
 		<script src="./Includes/JS/menu.js"></script>

@@ -8,11 +8,7 @@
 
 		<link rel="stylesheet" href="./Includes/CSS/menu.css" />
 		<link rel="stylesheet" href="./Includes/CSS/main.css" />
-		<link
-			rel="shortcut icon"
-			type="image/x-icon"
-			href="./Images/fpc_code_logo.png"
-		/>
+		<link rel="shortcut icon" type="image/x-icon" href="./Images/fpc_code_logo.png" />
 		<link
 			href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap"
 			rel="stylesheet"
@@ -22,19 +18,20 @@
 	</head>
 
 	<body>
-		<div id="menu">
-			<nav>
-				<div class="logo">
-					<a href="./"><h4>FPC Code</h4></a>
-				</div>
+		<header>
+			<div class="logo-container">
+				<a href="./index.html">
+					<img src="./Images/fpc_code_logo.png" alt="FPC Code Logo" />
+				</a>
 
+				<h4 class="logo">FPC Code</h4>
+			</div>
+
+			<nav>
 				<ul class="nav-links">
-					<li><a href="./">Home</a></li>
-					<li><a href="./about.html">About</a></li>
-					<li><a href="./officers.html">Officers</a></li>
-					<li><a href="./projects.html">Projects</a></li>
-					<li><a href="./join.html">Join</a></li>
-					<li><a href="./sign-in.html">Sign In</a></li>
+					<li><a class="nav-link" href="./about.html">About</a></li>
+					<li><a class="nav-link" href="./officers.html">Officers</a></li>
+					<li><a class="nav-link" href="./projects.html">Projects</a></li>
 				</ul>
 
 				<div class="burger">
@@ -43,19 +40,25 @@
 					<div class="line3"></div>
 				</div>
 			</nav>
-		</div>
 
-		<div class="home-image">
-			<img
-				src="./Images/code_sign-in_1.jpg"
-				alt="Students sitting in class."
-			/>
-		</div>
+			<ul class="buttons">
+				<li>
+					<input type="button" onclick="redirect('./join.html')" value="Join" />
+				</li>
+				<li>
+					<input type="button" onclick="redirect('./sign-in.html')" value="Sign In" />
+				</li>
+			</ul>
+		</header>
 
-		<div class="main">
+		<main>
+			<div class="home-image">
+				<img src="./Images/code_sign-in_1.jpg" alt="Students sitting in class." />
+			</div>
+
 			<h1>Sign In to Club Meetings</h1>
 
-			<div class="signin">
+			<section class="signin">
 				<div class="box">
 					<iframe
 						src="https://docs.google.com/forms/d/e/1FAIpQLScBwlBQ8yJrgVV8sciNnjNhjEplOeYhzIBd4C-EmbCj4pHAtg/viewform?embedded=true"
@@ -77,8 +80,22 @@
 						align="right"
 					></iframe>
 				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="footer-logo">
+				<img src="./Images/fpc_code_logo.png" alt="FPC Code Logo" />
 			</div>
-		</div>
+
+			<div class="footer-button">
+				<input type="button" onclick="redirect('./join.html')" value="Join Now" />
+			</div>
+
+			<div class="footer-text">
+				<h4>FPC Code</h4>
+			</div>
+		</footer>
 
 		<script src="./Includes/JS/script.js"></script>
 		<script src="./Includes/JS/menu.js"></script>
