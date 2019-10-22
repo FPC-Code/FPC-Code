@@ -11,10 +11,8 @@ if (isset($_POST['submit'])) {
 	$email = $_POST['email'];
 	$subject = $_POST['subject'];
 	$grade = $_POST['grade'];
-	$header = "From: ".$email;
-	$body = $name." has joined Coding Club!: \n\n
-	Grade:	".$grade."\n
-	Email:	".$email;
+	$header = "From: noreply@codefpc.com";
+	$body = $name." has joined Coding Club!: \n\nGrade:	".$grade."\nEmail:	".$email;
 
 	mail($email_list,$subject,$body,$header);
 	header("Location: ../../thanks-join.html");
