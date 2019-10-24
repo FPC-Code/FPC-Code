@@ -284,6 +284,7 @@ h2 {
 	margin-bottom: 100px;
 	border-radius: 5px;
 	align-items: center;
+	transition: 0.25s;
 }
 
 .text p {
@@ -294,6 +295,7 @@ h2 {
 	margin-bottom: 25px;
 	font-size: 20px;
 	line-height: 30px;
+	transition: 0.25s;
 }
 
 .text img {
@@ -306,18 +308,7 @@ h2 {
 	border-radius: 5px;
 	background-color: #6e7869;
 	object-fit: cover;
-}
-
-@media screen and (max-width: 768px) {
-	.text ul {
-		max-width: 400px;
-	}
-
-	.text img {
-		width: 225px;
-		height: 150px;
-		object-fit: cover;
-	}
+	transition: 0.25s;
 }
 
 .information {
@@ -398,7 +389,7 @@ footer {
 	width: 100%;
 	display: flex;
 	margin: 0;
-	padding: 2.5vw 15vw;
+	padding: 2.5vw 5vw;
 	bottom: 0;
 }
 
@@ -447,13 +438,22 @@ input[type="button"]:hover {
 	background-color: #939a9c;
 }
 
+.link input[type="button"] {
+	font-family: "Comfortaa", sans-serif;
+	height: 75px;
+	width: 150px;
+	border-radius: 5px;
+	font-size: 26px;
+	font-weight: normal;
+}
+
 .footer-button input[type="button"] {
 	font-family: "Comfortaa", sans-serif;
-	width: 25vw;
-	height: 75px;
-	font-size: 26px;
+	width: 200px;
+	height: 100px;
+	font-size: 32px;
 	border-radius: 5px;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 .footer-button {
@@ -467,4 +467,44 @@ input[type="button"]:hover {
 
 .sorry p {
 	display: inline-block;
+}
+
+@media screen and (max-width: 1024px) {
+	.text ul {
+		max-width: 400px;
+	}
+
+	.text img {
+		width: 300px;
+		height: 200px;
+		object-fit: cover;
+	}
+
+	#officers-list li {
+		background-color: #778e80;
+		display: block;
+		max-width: 400px;
+		min-width: 400px;
+		max-height: 200px;
+		min-height: 200px;
+		padding-top: 5px;
+		padding-bottom: 15px;
+		margin: 0px 25px;
+		margin-top: 0px;
+		margin-bottom: 50px;
+		color: #f0f1eb;
+		border-radius: 5px;
+	}
+
+	.link input[type="button"] {
+		height: 50px;
+		width: 100px;
+		font-size: 20px;
+	}
+
+	.footer-button input[type="button"] {
+		width: 150px;
+		height: 75px;
+		font-size: 26px;
+	}
 }
