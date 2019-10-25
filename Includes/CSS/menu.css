@@ -46,10 +46,11 @@ header {
 }
 
 .logo-container img {
-	width: 50px;
+	width: 30%;
 	margin: 0;
 	margin-right: 10px;
 	vertical-align: middle;
+	border-radius: 5%;
 }
 
 nav {
