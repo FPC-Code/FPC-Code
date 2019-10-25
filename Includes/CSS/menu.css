@@ -83,7 +83,7 @@ nav {
 .buttons input[type="button"] {
 	font-family: "Comfortaa", sans-serif;
 	width: 100px;
-	height: 5vh;
+	height: 45px;
 	padding: 0;
 	margin: 5px 0;
 	margin-left: 15px;
@@ -149,6 +149,7 @@ nav {
 	.nav-links li {
 		opacity: 0;
 		margin: 15vh 0;
+		transition: 0.25s;
 	}
 
 	.burger {
@@ -166,6 +167,12 @@ nav {
 		margin-left: 15px;
 		border-radius: 5px;
 		font-weight: normal;
+	}
+
+	@media screen and (max-height: 448px) {
+		.nav-links li {
+			margin: 7.5vh 0;
+		}
 	}
 }
 
