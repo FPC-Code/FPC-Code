@@ -15,8 +15,8 @@ if (isset($_POST['submit'])) {
 	$body = $name." has joined Coding Club!: \n\nGrade:	".$grade."\nEmail:	".$email;
 
 	mail($email_list,$subject,$body,$header);
-	header("Location: ../../thanks-join.html");
+	header("Location: ../../thanks-join/");
 } else {
-	header("Location: ../../sorry.html");
+	header("Location: ../../sorry/");
 }
 ?>
