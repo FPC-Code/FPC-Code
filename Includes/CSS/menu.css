@@ -4,6 +4,7 @@ header {
 	background: rgba(33, 41, 34, 1);
 	width: 100%;
 	height: 75px;
+	min-height: 10vh;
 	padding: 0vh 5vw;
 	margin: auto;
 	align-items: center;
@@ -37,7 +38,7 @@ header {
 
 .logo {
 	color: #f0f1eb;
-	font-size: 22px;
+	font-size: 20pt;
 	text-decoration: none;
 	font-weight: 400;
 	margin: 0;
@@ -67,7 +68,7 @@ nav {
 
 .nav-link {
 	color: #f0f1eb;
-	font-size: 18px;
+	font-size: 14pt;
 	text-decoration: none;
 	transition: 0.25s;
 	margin: 30px;
@@ -75,22 +76,22 @@ nav {
 
 .buttons {
 	flex: 1;
-	justify-content: flex-end;
+	justify-content: space-around;
 	list-style: none;
 	padding: 1.25vh 0;
 	margin: 0;
+	width: 20%;
 }
 
 .buttons input[type="button"] {
 	font-family: "Comfortaa", sans-serif;
 	width: 100px;
 	height: 45px;
-	padding: 0;
-	margin: 5px 0;
-	margin-left: 15px;
+	padding: 5%;
+	margin: 10% 0;
 	border-radius: 5px;
 	font-weight: normal;
-	font-size: 20px;
+	font-size: 16pt;
 }
 
 @media screen and (max-width: 1048px) {
