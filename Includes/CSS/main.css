@@ -6,8 +6,8 @@
 
 html,
 body {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+		"Open Sans", "Helvetica Neue", sans-serif;
 	letter-spacing: 0px;
 	color: #f0f1eb;
 	background: #f0f1eb;
@@ -18,25 +18,22 @@ body {
 	font-size: 0px;
 }
 
-.main {
+main {
 	margin-bottom: 250px;
+	margin-top: 75px;
 }
 
-.main h1,
-.wrapper h1,
-.form-page h1 {
+main h1 {
 	font-size: 56px;
 	font-weight: bold;
 	background-color: #212922;
 	color: #f0f1eb;
 	padding: 25px 25px;
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin: 0;
 	text-align: center;
 }
 
-.main a,
-.form-page a {
+main a {
 	text-decoration: none;
 	color: #f0f1eb;
 	background-color: #6e7869;
@@ -44,28 +41,18 @@ body {
 	border-radius: 2.5px;
 	font-style: italic;
 	font-size: 18px;
+	margin-top: 10vh;
 }
 
-.main ul,
-.form-page ul {
+main ul {
 	text-align: center;
 	align-content: center;
 }
 
-.main li,
-.form-page li {
+main li {
 	display: inline-block;
 	margin: 0px 50px;
 	vertical-align: top;
-}
-
-div.main,
-div.form-page {
-	width: 100%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: top right;
-	background-size: 40%;
 }
 
 .signin {
@@ -288,35 +275,40 @@ h2 {
 
 .text ul {
 	background-color: #778e80;
-	width: 400px;
-	padding: 0px;
+	max-width: 600px;
+	padding: 0;
 	padding-top: 25px;
 	padding-bottom: 35px;
 	margin: auto;
 	margin-top: 50px;
 	margin-bottom: 100px;
 	border-radius: 5px;
+	align-items: center;
+	transition: 0.25s;
 }
 
 .text p {
 	color: #f0f1eb;
 	text-align: center;
 	padding: 0;
-	margin: 0;
+	margin: 1.25vw;
 	margin-bottom: 25px;
 	font-size: 20px;
 	line-height: 30px;
-	max-width: 350px;
+	transition: 0.25s;
 }
 
 .text img {
-	width: 250px;
-	height: 100%;
+	width: 450px;
+	height: 300px;
 	display: inline-block;
 	margin: 0;
+	margin-top: 25px;
 	padding: 0;
 	border-radius: 5px;
 	background-color: #6e7869;
+	object-fit: cover;
+	transition: 0.25s;
 }
 
 .information {
@@ -383,44 +375,136 @@ h2 {
 
 .home-image img {
 	width: 100%;
-	height: 50vh;
+	height: 325px;
 	background-color: #212922;
 	object-fit: cover;
 	margin: 0px;
 	padding: 0px;
 }
 
-.foot {
+footer {
 	background-color: #212922;
-	height: 25vh;
-	max-height: 25vh;
+	min-height: 20vh;
+	align-items: center;
+	width: 100%;
+	display: flex;
+	margin: 0;
+	padding: 2.5vw 5vw;
+	bottom: 0;
 }
 
-.foot p {
+.footer-text {
+	width: 25%;
+}
+
+.footer-text h4 {
+	font-family: "Comfortaa", sans-serif;
 	color: #f0f1eb;
-	font-size: 14px;
-	padding: 50px 0px;
-	padding-left: 50px;
+	font-size: 31px;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	flex: 1;
+	justify-content: space-around;
+}
+
+.footer-logo {
+	width: 25%;
+}
+
+.footer-logo img {
+	width: 100px;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	flex: 1;
+	justify-content: space-around;
 }
 
 input[type="button"] {
-	width: 250px;
-	height: 75px;
-	border: 0px;
-	font-size: 26px;
 	background-color: #6e7869;
-	color: #f0f1eb;
-	cursor: pointer;
-	border-radius: 5px;
-	font-weight: bold;
+	border: 0px;
 	text-align: center;
 	transition: 0.25s;
+	cursor: pointer;
+	color: #f0f1eb;
+	margin: 0;
+	padding: 0;
 }
 
 input[type="button"]:hover {
 	background-color: #939a9c;
 }
 
+.link input[type="button"] {
+	font-family: "Comfortaa", sans-serif;
+	height: 75px;
+	width: 150px;
+	border-radius: 5px;
+	font-size: 26px;
+	font-weight: normal;
+}
+
+.footer-button input[type="button"] {
+	font-family: "Comfortaa", sans-serif;
+	width: 200px;
+	height: 100px;
+	font-size: 32px;
+	border-radius: 5px;
+	font-weight: normal;
+}
+
+.footer-button {
+	display: flex;
+	flex: 2;
+	padding: 0;
+	margin: 0 15%;
+	align-items: center;
+	justify-content: space-around;
+}
+
 .sorry p {
 	display: inline-block;
+}
+
+@media screen and (max-width: 1024px) {
+	.text ul {
+		max-width: 400px;
+	}
+
+	.text img {
+		width: 300px;
+		height: 200px;
+		object-fit: cover;
+	}
+
+	#officers-list li {
+		background-color: #778e80;
+		display: block;
+		max-width: 400px;
+		min-width: 400px;
+		max-height: 200px;
+		min-height: 200px;
+		padding-top: 5px;
+		padding-bottom: 15px;
+		margin: 0px 25px;
+		margin-top: 0px;
+		margin-bottom: 50px;
+		color: #f0f1eb;
+		border-radius: 5px;
+	}
+
+	.link input[type="button"] {
+		height: 50px;
+		width: 100px;
+		font-size: 20px;
+	}
+
+	.footer-button input[type="button"] {
+		width: 150px;
+		height: 75px;
+		font-size: 26px;
+	}
 }
