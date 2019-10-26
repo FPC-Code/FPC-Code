@@ -46,7 +46,7 @@ header {
 }
 
 .logo-container img {
-	width: 50px;
+	height: 50px;
 	margin: 0;
 	margin-right: 10px;
 	vertical-align: middle;
@@ -97,22 +97,33 @@ nav {
 		display: none;
 	}
 
-	.logo-container img {
-		margin-right: 10px;
-	}
-
 	.buttons {
 		padding: 0.75vh 0;
 	}
 
+	.buttons input[type="button"] {
+		font-family: "Comfortaa", sans-serif;
+		width: 75px;
+		height: 37.5px;
+		padding: 0;
+		margin: 5px 0;
+		margin-left: 15px;
+		border-radius: 5px;
+		font-weight: normal;
+		font-size: 18px;
+	}
+
 	.nav-link {
-		margin: 15px;
+		margin: 5px;
+		font-size: 16px;
 	}
 }
 
 .burger {
 	display: none;
 	cursor: pointer;
+	float: right;
+	clear: right;
 }
 
 .burger div {
@@ -152,6 +163,10 @@ nav {
 		transition: 0.25s;
 	}
 
+	.nav-link {
+		font-size: 18px;
+	}
+
 	.burger {
 		display: inline-block;
 		flex: 1;
@@ -160,8 +175,8 @@ nav {
 
 	.buttons input[type="button"] {
 		font-size: 16px;
-		width: 75px;
-		height: 35px;
+		width: 65px;
+		height: 30px;
 		padding: 0;
 		margin: 5px 0;
 		margin-left: 15px;
@@ -172,6 +187,10 @@ nav {
 	@media screen and (max-height: 448px) {
 		.nav-links li {
 			margin: 5vh 0;
+		}
+
+		.nav-link {
+			font-size: 16px;
 		}
 	}
 }
