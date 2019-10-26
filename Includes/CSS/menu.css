@@ -149,12 +149,13 @@ nav {
 	.nav-links li {
 		opacity: 0;
 		margin: 15vh 0;
+		transition: 0.25s;
 	}
 
 	.burger {
 		display: inline-block;
 		flex: 1;
-		margin-left: 5px;
+		margin-left: 7.5px;
 	}
 
 	.buttons input[type="button"] {
@@ -166,6 +167,12 @@ nav {
 		margin-left: 15px;
 		border-radius: 5px;
 		font-weight: normal;
+	}
+
+	@media screen and (max-height: 448px) {
+		.nav-links li {
+			margin: 5vh 0;
+		}
 	}
 }
 
