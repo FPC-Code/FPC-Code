@@ -12,14 +12,11 @@
 #officers-list li {
 	background-color: #778e80;
 	display: inline-block;
-	max-width: 400px;
-	min-width: 400px;
-	max-height: 200px;
-	min-height: 200px;
+	width: 400px;
+	height: 200px;
 	padding-top: 5px;
 	padding-bottom: 15px;
 	margin: 0px 25px;
-	margin-top: 0px;
 	margin-bottom: 50px;
 	color: #f0f1eb;
 	border-radius: 5px;
@@ -77,14 +74,9 @@
 	#officers-list li {
 		background-color: #778e80;
 		display: block;
-		max-width: 400px;
-		min-width: 400px;
-		max-height: 200px;
-		min-height: 200px;
 		padding-top: 5px;
 		padding-bottom: 15px;
 		margin: 0px 25px;
-		margin-top: 0px;
 		margin-bottom: 50px;
 		color: #f0f1eb;
 		border-radius: 5px;
