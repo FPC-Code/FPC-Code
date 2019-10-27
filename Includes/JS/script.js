@@ -1,6 +1,3 @@
-var otherbutton = document.getElementById(otherbutton);
-var other = document.getElementsByClassName(other);
-
 function redirect(url) {
 	window.location.href = url;
 }
