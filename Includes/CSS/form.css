@@ -7,9 +7,11 @@
 	margin-top: 0px;
 	margin-bottom: 0px;
 	text-align: center;
+	padding: 0 25px;
 	padding-bottom: 250px;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
+	transition: 0.25s;
 }
 
 /* Text for form */
