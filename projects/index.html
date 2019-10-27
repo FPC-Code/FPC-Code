@@ -8,6 +8,8 @@
 
 		<link rel="stylesheet" href="/Includes/CSS/menu.css" />
 		<link rel="stylesheet" href="/Includes/CSS/main.css" />
+		<link rel="stylesheet" href="/Includes/CSS/form.css" />
+		<link rel="stylesheet" href="/Includes/CSS/footer.css" />
 		<link rel="shortcut icon" type="image/x-icon" href="/Images/Assets/favicon.png" />
 		<link
 			href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap"
@@ -111,98 +113,92 @@
 				</div>
 
 				<div class="form">
-					<center>
-						<form method="POST" action="/Includes/PHP/process.php">
-							<input type="hidden" name="_subject" value="New Website Request" />
-							<h3>Full Name</h3>
+					<form method="POST" action="/Includes/PHP/process.php">
+						<input type="hidden" name="_subject" value="New Website Request" />
+						<h3>Full Name</h3>
 
-							<input type="text" name="name" placeholder="John Doe" size="24px" />
+						<input type="text" name="name" placeholder="John Doe" size="24px" />
 
-							<h3>Email</h3>
+						<h3>Email</h3>
 
-							<input
-								type="email"
-								name="_replyto"
-								placeholder="john.doe@email.com"
-								size="24px"
-							/>
+						<input
+							type="email"
+							name="_replyto"
+							placeholder="john.doe@email.com"
+							size="24px"
+						/>
 
-							<h3>What do You Need?</h3>
+						<h3>What do You Need?</h3>
 
-							<label class="container"
-								>New Website&nbsp;&nbsp;&nbsp;&nbsp;
-								<input type="radio" name="webtype" value="New Website" />
-								<span class="checkmark"></span>
-							</label>
+						<label class="container"
+							>New Website&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="radio" name="webtype" value="New Website" />
+							<span class="checkmark"></span>
+						</label>
 
-							<label class="container"
-								>Maintenance on a Website&nbsp;&nbsp;&nbsp;&nbsp;
-								<input
-									type="radio"
-									name="webtype"
-									value="Maintenance on a Website"
-								/>
-								<span class="checkmark"></span>
-							</label>
+						<label class="container"
+							>Maintenance on a Website&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="radio" name="webtype" value="Maintenance on a Website" />
+							<span class="checkmark"></span>
+						</label>
 
-							<label class="container"
-								>One Time Update&nbsp;&nbsp;&nbsp;&nbsp;
-								<input type="radio" name="webtype" value="One Time Update" />
-								<span class="checkmark"></span>
-							</label>
+						<label class="container"
+							>One Time Update&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="radio" name="webtype" value="One Time Update" />
+							<span class="checkmark"></span>
+						</label>
 
-							<h3>
-								Do You Have Access to the Website's HTML?
-							</h3>
+						<h3>
+							Do You Have Access to the Website's HTML?
+						</h3>
 
-							<label class="container"
-								>Yes&nbsp;&nbsp;&nbsp;&nbsp;
-								<input type="radio" name="access" value="yes" />
+						<label class="container"
+							>Yes&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="radio" name="access" value="yes" />
 
-								<span class="checkmark"></span>
-							</label>
+							<span class="checkmark"></span>
+						</label>
 
-							<label class="container"
-								>No&nbsp;&nbsp;&nbsp;&nbsp;
+						<label class="container"
+							>No&nbsp;&nbsp;&nbsp;&nbsp;
 
-								<input type="radio" name="access" value="no" />
+							<input type="radio" name="access" value="no" />
 
-								<span class="checkmark"></span>
-							</label>
+							<span class="checkmark"></span>
+						</label>
 
-							<h3>What Type of Website is it?</h3>
+						<h3>What Type of Website is it?</h3>
 
-							<label class="container"
-								>Informational&nbsp;&nbsp;&nbsp;&nbsp;
+						<label class="container"
+							>Informational&nbsp;&nbsp;&nbsp;&nbsp;
 
-								<input type="radio" name="site-type" value="Informational" />
+							<input type="radio" name="site-type" value="Informational" />
 
-								<span class="checkmark"></span>
-							</label>
+							<span class="checkmark"></span>
+						</label>
 
-							<label class="container"
-								>Web Form&nbsp;&nbsp;&nbsp;&nbsp;
+						<label class="container"
+							>Web Form&nbsp;&nbsp;&nbsp;&nbsp;
 
-								<input type="radio" name="site-type" value="Web Form" />
+							<input type="radio" name="site-type" value="Web Form" />
 
-								<span class="checkmark"></span>
-							</label>
+							<span class="checkmark"></span>
+						</label>
 
-							<label class="container"
-								>Other&nbsp;&nbsp;&nbsp;&nbsp;
+						<label class="container"
+							>Other&nbsp;&nbsp;&nbsp;&nbsp;
 
-								<input type="radio" name="site-type" value="Other" />
+							<input type="radio" name="site-type" value="Other" />
 
-								<span class="checkmark"></span>
-							</label>
+							<span class="checkmark"></span>
+						</label>
 
-							<h3 class="other">If Other then Specify</h3>
+						<h3 class="other">If Other then Specify</h3>
 
-							<input type="text" name="other" class="other" size="30" height="50px" />
+						<input type="text" name="other" class="other" size="30" height="50px" />
 
-							<input type="submit" value="Submit" name="submit" />
-						</form>
-					</center>
+						<input type="submit" value="Submit" name="submit" />
+					</form>
 				</div>
 			</div>
 		</section>

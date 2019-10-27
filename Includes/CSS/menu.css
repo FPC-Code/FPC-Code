@@ -145,7 +145,7 @@ nav {
 		left: 0px;
 		height: calc(100vh - 75px);
 		top: 75px;
-		background: rgba(33, 41, 34, 0.75);
+		background: rgba(33, 41, 34, 0.9);
 		display: block;
 		text-align: center;
 		align-items: center;

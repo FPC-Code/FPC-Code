@@ -8,6 +8,8 @@
 
 		<link rel="stylesheet" href="/Includes/CSS/menu.css" />
 		<link rel="stylesheet" href="/Includes/CSS/main.css" />
+		<link rel="stylesheet" href="/Includes/CSS/form.css" />
+		<link rel="stylesheet" href="/Includes/CSS/footer.css" />
 		<link rel="shortcut icon" type="image/x-icon" href="/Images/Assets/favicon.png" />
 		<link
 			href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap"
@@ -100,52 +102,50 @@
 			</div>
 
 			<div class="form">
-				<center>
-					<form method="POST" action="/Includes/PHP/join.php">
-						<input type="hidden" name="subject" value="New Member" />
+				<form method="POST" action="/Includes/PHP/join.php">
+					<input type="hidden" name="subject" value="New Member" />
 
-						<h3>Full Name</h3>
+					<h3>Full Name</h3>
 
-						<input type="text" name="name" placeholder="John Joseph" size="24px" />
+					<input type="text" name="name" placeholder="John Joseph" size="24px" />
 
-						<h3>School Email</h3>
+					<h3>School Email</h3>
 
-						<input
-							type="email"
-							name="email"
-							placeholder="johnjos1234@flaglercps.org"
-							size="24px"
-						/>
+					<input
+						type="email"
+						name="email"
+						placeholder="johnjos1234@flaglercps.org"
+						size="24px"
+					/>
 
-						<h3>Current Grade</h3>
+					<h3>Current Grade</h3>
 
-						<label class="container"
-							>9th Grade&nbsp;&nbsp;&nbsp;&nbsp;
-							<input type="radio" name="grade" value="9th Grade - Freshman" />
-							<span class="checkmark"></span>
-						</label>
+					<label class="container"
+						>9th Grade&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="grade" value="9th Grade - Freshman" />
+						<span class="checkmark"></span>
+					</label>
 
-						<label class="container"
-							>10th Grade&nbsp;&nbsp;&nbsp;&nbsp;
-							<input type="radio" name="grade" value="10th Grade - Sophomore" />
-							<span class="checkmark"></span>
-						</label>
+					<label class="container"
+						>10th Grade&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="grade" value="10th Grade - Sophomore" />
+						<span class="checkmark"></span>
+					</label>
 
-						<label class="container"
-							>11th Grade&nbsp;&nbsp;&nbsp;&nbsp;
-							<input type="radio" name="grade" value="11th Grade - Junior" />
-							<span class="checkmark"></span>
-						</label>
+					<label class="container"
+						>11th Grade&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="grade" value="11th Grade - Junior" />
+						<span class="checkmark"></span>
+					</label>
 
-						<label class="container"
-							>12th Grade&nbsp;&nbsp;&nbsp;&nbsp;
-							<input type="radio" name="grade" value="12th Grade - Senior" />
-							<span class="checkmark"></span>
-						</label>
+					<label class="container"
+						>12th Grade&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="grade" value="12th Grade - Senior" />
+						<span class="checkmark"></span>
+					</label>
 
-						<input type="submit" name="submit" value="Submit" />
-					</form>
-				</center>
+					<input type="submit" name="submit" value="Submit" />
+				</form>
 			</div>
 		</section>
 
