@@ -1,9 +1,9 @@
 header {
 	font-family: "Comfortaa", sans-serif;
 	display: flex;
-	background: rgba(33, 41, 34, 0.75);
+	background: rgba(33, 41, 34, 1);
 	width: 100%;
-	height: 10vh;
+	height: 75px;
 	padding: 0vh 5vw;
 	margin: auto;
 	align-items: center;
@@ -43,10 +43,11 @@ header {
 	margin: 0;
 	display: inline-block;
 	vertical-align: middle;
+	display: none;
 }
 
 .logo-container img {
-	width: 8vh;
+	height: 50px;
 	margin: 0;
 	margin-right: 10px;
 	vertical-align: middle;
@@ -83,36 +84,43 @@ nav {
 .buttons input[type="button"] {
 	font-family: "Comfortaa", sans-serif;
 	width: 100px;
-	height: 7vh;
+	height: 45px;
 	padding: 0;
 	margin: 5px 0;
 	margin-left: 15px;
 	border-radius: 5px;
 	font-weight: normal;
-	font-size: 18px;
+	font-size: 20px;
 }
 
 @media screen and (max-width: 1048px) {
-	.logo {
-		display: none;
-	}
-
-	.logo-container img {
-		margin-right: 10px;
-	}
-
 	.buttons {
 		padding: 0.75vh 0;
 	}
 
+	.buttons input[type="button"] {
+		font-family: "Comfortaa", sans-serif;
+		width: 75px;
+		height: 37.5px;
+		padding: 0;
+		margin: 5px 0;
+		margin-left: 15px;
+		border-radius: 5px;
+		font-weight: normal;
+		font-size: 18px;
+	}
+
 	.nav-link {
-		margin: 15px;
+		margin: 5px;
+		font-size: 16px;
 	}
 }
 
 .burger {
 	display: none;
 	cursor: pointer;
+	float: right;
+	clear: right;
 }
 
 .burger div {
@@ -134,11 +142,12 @@ nav {
 	.nav-links {
 		position: absolute;
 		right: 0px;
-		height: 90vh;
-		top: 10vh;
-		background: rgba(33, 41, 34, 0.75);
-		display: flex;
-		flex-direction: column;
+		left: 0px;
+		height: calc(100vh - 75px);
+		top: 75px;
+		background: rgba(33, 41, 34, 0.9);
+		display: block;
+		text-align: center;
 		align-items: center;
 		width: 100%;
 		transform: translateX(-100%);
@@ -147,17 +156,39 @@ nav {
 
 	.nav-links li {
 		opacity: 0;
-		margin: 7.5vh 0;
+		margin: 15vh 0;
+		transition: 0.25s;
+	}
+
+	.nav-link {
+		font-size: 18px;
 	}
 
 	.burger {
 		display: inline-block;
 		flex: 1;
-		margin-left: 5px;
+		margin-left: 7.5px;
 	}
 
 	.buttons input[type="button"] {
-		font-size: 14px;
+		font-size: 16px;
+		width: 65px;
+		height: 30px;
+		padding: 0;
+		margin: 5px 0;
+		margin-left: 15px;
+		border-radius: 5px;
+		font-weight: normal;
+	}
+
+	@media screen and (max-height: 448px) {
+		.nav-links li {
+			margin: 7.5vh 0;
+		}
+
+		.nav-link {
+			font-size: 16px;
+		}
 	}
 }
 

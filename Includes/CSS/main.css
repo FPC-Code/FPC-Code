@@ -1,3 +1,4 @@
+/* Basic settings for the entire page */
 * {
 	margin: 0px;
 	padding: 0px;
@@ -13,253 +14,24 @@ body {
 	background: #f0f1eb;
 	height: 100%;
 	width: 100%;
-	padding-top: 0px;
-	margin: 0;
 	font-size: 0px;
 }
 
+/* Main margins */
 main {
 	margin-bottom: 250px;
+	margin-top: 75px;
 }
 
-main h1 {
+/* Heading Styles */
+h1 {
 	font-size: 56px;
 	font-weight: bold;
 	background-color: #212922;
 	color: #f0f1eb;
 	padding: 25px 25px;
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin: 0;
 	text-align: center;
-}
-
-main a {
-	text-decoration: none;
-	color: #f0f1eb;
-	background-color: #6e7869;
-	padding: 5px;
-	border-radius: 2.5px;
-	font-style: italic;
-	font-size: 18px;
-	margin-top: 10vh;
-}
-
-main ul {
-	text-align: center;
-	align-content: center;
-}
-
-main li {
-	display: inline-block;
-	margin: 0px 50px;
-	vertical-align: top;
-}
-
-.signin {
-	margin-top: 50px;
-}
-
-iframe {
-	display: inline;
-}
-
-input[type="text"] {
-	display: block;
-	width: 450px;
-	height: 35px;
-	border-width: 0px;
-	border-radius: 5px;
-	color: #6e7869;
-	background-color: #f0f1eb;
-	border-color: #212922;
-	border-style: solid;
-	font-size: 18pt;
-	margin-bottom: 25px;
-	padding: 5px;
-}
-
-input[type="email"] {
-	display: block;
-	width: 450px;
-	height: 35px;
-	border-width: 0px;
-	border-radius: 5px;
-	color: #6e7869;
-	background-color: #f0f1eb;
-	border-color: #212922;
-	border-style: solid;
-	font-size: 18pt;
-	margin-bottom: 25px;
-	padding: 5px;
-}
-
-input[type="submit"] {
-	display: block;
-	width: 150px;
-	height: 50px;
-	border-width: 0px;
-	border-radius: 5px;
-	color: #f0f1eb;
-	background-color: #6e7869;
-	border-color: #212922;
-	border-style: solid;
-	font-size: 20pt;
-	margin-top: 75px;
-	margin-bottom: 0px;
-	cursor: pointer;
-	padding: 10px;
-	transition: 0.25s;
-}
-
-input[type="submit"]:hover {
-	background-color: #939a9c;
-}
-
-/* The container */
-
-.container {
-	display: block;
-	position: relative;
-	margin-left: 25px;
-	margin-top: 25px;
-	margin-bottom: 50px;
-	cursor: pointer;
-	font-size: 24px;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	text-align: center;
-	color: #f0f1eb;
-}
-
-/* Hide the browser's default radio button */
-
-.container input {
-	position: relative;
-	opacity: 0;
-	cursor: pointer;
-	font-size: 18px;
-}
-
-/* Create a custom radio button */
-
-.checkmark {
-	position: absolute;
-	top: 0;
-	height: 25px;
-	width: 25px;
-	background-color: #f0f1eb;
-	border-radius: 50%;
-}
-
-/* On mouse-over, add a grey background color */
-
-.container:hover input ~ .checkmark {
-	background-color: #939a9c;
-}
-
-/* When the radio button is checked, add a blue background */
-
-.container input:checked ~ .checkmark {
-	background-color: #6e7869;
-}
-
-/* Create the indicator (the dot/circle - hidden when not checked) */
-
-.checkmark:after {
-	content: "";
-	position: absolute;
-	display: none;
-}
-
-/* Show the indicator (dot/circle) when checked */
-
-@keyframes zoom {
-	from {
-		top: 0px;
-		width: 25px;
-		height: 25px;
-	}
-
-	to {
-		top: 9px;
-		width: 8px;
-		height: 8px;
-	}
-}
-
-/* Style the indicator (dot/circle) */
-
-.container .checkmark:after {
-	display: block;
-	animation-name: zoom;
-	animation-duration: 0.25s;
-	top: 9px;
-	left: 9px;
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	background: #f0f1eb;
-}
-
-.link {
-	margin: auto;
-	text-align: center;
-}
-
-#join-link {
-	margin-top: 0px;
-	margin-bottom: 250px;
-}
-
-#officers ul {
-	display: inline-block;
-	margin: auto;
-}
-
-/* List styles for officers section */
-#officers-list {
-	text-align: center;
-	margin-bottom: 25px;
-}
-
-#officers-list li {
-	background-color: #778e80;
-	display: inline-block;
-	max-width: 400px;
-	min-width: 400px;
-	max-height: 200px;
-	min-height: 200px;
-	padding-top: 5px;
-	padding-bottom: 15px;
-	margin: 0px 25px;
-	margin-top: 0px;
-	margin-bottom: 50px;
-	color: #f0f1eb;
-	border-radius: 5px;
-}
-
-#officers-list li h3 {
-	font-size: 32px;
-	margin-top: 15px;
-	margin-bottom: 25px;
-}
-
-#officers-list li h4 {
-	font-size: 24px;
-	margin-bottom: 20px;
-}
-
-#officers-list li p {
-	font-size: 16px;
-	font-style: italic;
-}
-
-/* Link styles for officers section */
-#officers .link {
-	text-align: center;
-	margin-bottom: 250px;
 }
 
 h2 {
@@ -273,6 +45,22 @@ h2 {
 	margin-bottom: 50px;
 }
 
+/* Image banner */
+.home-image img {
+	width: 100%;
+	height: 425px;
+	background-color: #212922;
+	object-fit: cover;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Sets margin for sign-in google forms */
+.sign-in {
+	margin-top: 50px;
+}
+
+/* Styles for main text sections */
 .text ul {
 	background-color: #778e80;
 	max-width: 600px;
@@ -283,8 +71,14 @@ h2 {
 	margin-top: 50px;
 	margin-bottom: 100px;
 	border-radius: 5px;
-	align-items: center;
 	transition: 0.25s;
+	text-align: center;
+}
+
+.text li {
+	display: inline-block;
+	margin: 0px 50px;
+	vertical-align: top;
 }
 
 .text p {
@@ -296,6 +90,18 @@ h2 {
 	font-size: 20px;
 	line-height: 30px;
 	transition: 0.25s;
+	width: 450px;
+}
+
+.text a {
+	text-decoration: none;
+	color: #f0f1eb;
+	background-color: #6e7869;
+	padding: 5px;
+	border-radius: 2.5px;
+	font-style: italic;
+	font-size: 18px;
+	margin-top: 10vh;
 }
 
 .text img {
@@ -311,118 +117,7 @@ h2 {
 	transition: 0.25s;
 }
 
-.information {
-	opacity: 0;
-	transition: 0.25s;
-}
-
-.information-show {
-	opacity: 1;
-}
-
-#officers li:hover .information {
-	opacity: 1;
-}
-
-.form {
-	width: 750px;
-	max-width: 750px;
-	background-color: #778e80;
-	margin: auto;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	text-align: center;
-	padding-bottom: 250px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-}
-
-.form-header {
-	background-color: #779869;
-	color: #f0f1eb;
-	margin-bottom: 0px;
-}
-
-.form-header h2 {
-	font-size: 34px;
-	padding-bottom: 0px;
-	margin-bottom: 25px;
-}
-
-.form h3 {
-	color: #f0f1eb;
-	font-size: 30px;
-	padding-top: 50px;
-	padding-bottom: 10px;
-}
-
-.form p {
-	color: #f0f1eb;
-	font-size: 16px;
-	padding-bottom: 0px;
-	padding-top: 10px;
-	font-style: italic;
-}
-
-.form-header p {
-	color: #f0f1eb;
-	font-style: italic;
-	font-size: 18px;
-	padding-bottom: 15px;
-	margin-bottom: 50px;
-	text-align: center;
-}
-
-.home-image img {
-	width: 100%;
-	height: 50vh;
-	background-color: #212922;
-	object-fit: cover;
-	margin: 0px;
-	padding: 0px;
-}
-
-footer {
-	background-color: #212922;
-	min-height: 20vh;
-	align-items: center;
-	width: 100%;
-	display: flex;
-	margin: 0;
-	padding: 2.5vw 5vw;
-	bottom: 0;
-}
-
-.footer-text {
-	width: 25%;
-}
-
-.footer-text h4 {
-	font-family: "Comfortaa", sans-serif;
-	color: #f0f1eb;
-	font-size: 31px;
-	padding: 0;
-	margin: 0;
-	display: flex;
-	align-items: center;
-	flex: 1;
-	justify-content: space-around;
-}
-
-.footer-logo {
-	width: 25%;
-}
-
-.footer-logo img {
-	width: 100px;
-	padding: 0;
-	margin: 0;
-	display: flex;
-	align-items: center;
-	flex: 1;
-	justify-content: space-around;
-}
-
+/* Button styles */
 input[type="button"] {
 	background-color: #6e7869;
 	border: 0px;
@@ -438,6 +133,12 @@ input[type="button"]:hover {
 	background-color: #939a9c;
 }
 
+/* Simple button styles */
+.link {
+	margin: auto;
+	text-align: center;
+}
+
 .link input[type="button"] {
 	font-family: "Comfortaa", sans-serif;
 	height: 75px;
@@ -447,31 +148,14 @@ input[type="button"]:hover {
 	font-weight: normal;
 }
 
-.footer-button input[type="button"] {
-	font-family: "Comfortaa", sans-serif;
-	width: 200px;
-	height: 100px;
-	font-size: 32px;
-	border-radius: 5px;
-	font-weight: normal;
-}
-
-.footer-button {
-	display: flex;
-	flex: 2;
-	padding: 0;
-	margin: 0 15%;
-	align-items: center;
-	justify-content: space-around;
-}
-
-.sorry p {
-	display: inline-block;
-}
-
+/* Resize when window size is small */
 @media screen and (max-width: 1024px) {
 	.text ul {
 		max-width: 400px;
+	}
+
+	.text p {
+		width: 300px;
 	}
 
 	.text img {
@@ -480,31 +164,9 @@ input[type="button"]:hover {
 		object-fit: cover;
 	}
 
-	#officers-list li {
-		background-color: #778e80;
-		display: block;
-		max-width: 400px;
-		min-width: 400px;
-		max-height: 200px;
-		min-height: 200px;
-		padding-top: 5px;
-		padding-bottom: 15px;
-		margin: 0px 25px;
-		margin-top: 0px;
-		margin-bottom: 50px;
-		color: #f0f1eb;
-		border-radius: 5px;
-	}
-
 	.link input[type="button"] {
 		height: 50px;
 		width: 100px;
 		font-size: 20px;
-	}
-
-	.footer-button input[type="button"] {
-		width: 150px;
-		height: 75px;
-		font-size: 26px;
 	}
 }

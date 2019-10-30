@@ -1,0 +1,84 @@
+/* List styles for officers section */
+#officers-list {
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+#officers ul {
+	display: inline-block;
+	margin: auto;
+}
+
+#officers-list li {
+	background-color: #778e80;
+	display: inline-block;
+	width: 400px;
+	height: 200px;
+	padding-top: 5px;
+	padding-bottom: 15px;
+	margin: 0px 25px;
+	margin-bottom: 50px;
+	color: #f0f1eb;
+	border-radius: 5px;
+}
+
+#officers li:hover .information {
+	opacity: 1;
+}
+
+#officers-list li h3 {
+	font-size: 32px;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+
+#officers-list li h4 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+#officers-list li p {
+	font-size: 16px;
+	font-style: italic;
+}
+
+/* Button styles for officers section */
+#officers .link {
+	text-align: center;
+	margin-bottom: 250px;
+}
+
+/* Officers information styles */
+.information {
+	opacity: 0;
+	transition: 0.25s;
+}
+
+.information a {
+	text-decoration: none;
+	color: #f0f1eb;
+	background-color: #6e7869;
+	padding: 5px;
+	border-radius: 2.5px;
+	font-style: italic;
+	font-size: 18px;
+	margin-top: 10vh;
+}
+
+.information-show {
+	opacity: 1;
+}
+
+/* Resize when window size is small */
+@media screen and (max-width: 1024px) {
+	#officers-list li {
+		background-color: #778e80;
+		display: block;
+		padding-top: 5px;
+		padding-bottom: 15px;
+		margin: 0px 25px;
+		margin-bottom: 50px;
+		color: #f0f1eb;
+		border-radius: 5px;
+	}
+}
