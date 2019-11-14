@@ -1,5 +1,5 @@
 header {
-	font-family: "Comfortaa", sans-serif;
+	font-family: HindLight, sans-serif;
 	display: flex;
 	background: rgba(33, 41, 34, 1);
 	width: 100%;
@@ -35,19 +35,8 @@ header {
 	text-decoration: none;
 }
 
-.logo {
-	color: #f0f1eb;
-	font-size: 22px;
-	text-decoration: none;
-	font-weight: 400;
-	margin: 0;
-	display: inline-block;
-	vertical-align: middle;
-	display: none;
-}
-
 .logo-container img {
-	height: 50px;
+	height: 35px;
 	margin: 0;
 	margin-right: 10px;
 	vertical-align: middle;
@@ -59,6 +48,7 @@ nav {
 
 .nav-links {
 	list-style: none;
+	letter-spacing: 1.25px;
 }
 
 .nav-links a:hover {
@@ -67,7 +57,7 @@ nav {
 
 .nav-link {
 	color: #f0f1eb;
-	font-size: 18px;
+	font-size: 16px;
 	text-decoration: none;
 	transition: 0.25s;
 	margin: 30px;
@@ -82,15 +72,15 @@ nav {
 }
 
 .buttons input[type="button"] {
-	font-family: "Comfortaa", sans-serif;
-	width: 100px;
-	height: 45px;
+	font-family: HindLight, sans-serif;
+	width: 75px;
+	height: 35px;
 	padding: 0;
-	margin: 5px 0;
 	margin-left: 15px;
 	border-radius: 5px;
 	font-weight: normal;
-	font-size: 20px;
+	font-size: 18px;
+	letter-spacing: 1.25px;
 }
 
 @media screen and (max-width: 1048px) {
@@ -99,12 +89,10 @@ nav {
 	}
 
 	.buttons input[type="button"] {
-		font-family: "Comfortaa", sans-serif;
 		width: 75px;
 		height: 37.5px;
 		padding: 0;
-		margin: 5px 0;
-		margin-left: 15px;
+		margin-left: 7.5px;
 		border-radius: 5px;
 		font-weight: normal;
 		font-size: 18px;
@@ -167,19 +155,18 @@ nav {
 	.burger {
 		display: inline-block;
 		flex: 1;
-		margin-left: 7.5px;
+		margin-right: 10px;
 	}
 
-	.buttons input[type="button"] {
-		font-size: 16px;
-		width: 65px;
+	/* .buttons input[type="button"] {
+		font-size: 14px;
+		width: 75px;
 		height: 30px;
 		padding: 0;
-		margin: 5px 0;
-		margin-left: 15px;
+		margin-left: 5px;
 		border-radius: 5px;
 		font-weight: normal;
-	}
+	} */
 
 	@media screen and (max-height: 448px) {
 		.nav-links li {
