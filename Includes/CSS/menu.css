@@ -72,7 +72,6 @@ nav {
 }
 
 .buttons input[type="button"] {
-    font-family: HindLight, sans-serif;
     width: 75px;
     height: 35px;
     padding: 0;
@@ -94,7 +93,6 @@ nav {
 
     .nav-link {
         margin: 10px;
-        font-size: 16px;
     }
 }
 
@@ -142,33 +140,15 @@ nav {
         transition: 0.25s;
     }
 
-    .nav-link {
-        font-size: 18px;
-    }
-
     .burger {
         display: inline-block;
         flex: 1;
         margin-right: 10px;
     }
 
-    /* .buttons input[type="button"] {
-		font-size: 14px;
-		width: 75px;
-		height: 30px;
-		padding: 0;
-		margin-left: 5px;
-		border-radius: 5px;
-		font-weight: normal;
-	} */
-
-    @media screen and (max-height: 448px) {
+    @media screen and (max-height: 548px) {
         .nav-links li {
             margin: 7.5vh 0;
-        }
-
-        .nav-link {
-            font-size: 16px;
         }
     }
 }
