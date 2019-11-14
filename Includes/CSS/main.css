@@ -1,5 +1,7 @@
 /* Basic settings for the entire page */
-* {
+*,
+*::before,
+*::after {
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
@@ -169,4 +171,15 @@ input[type="button"]:hover {
 		width: 100px;
 		font-size: 20px;
 	}
+}
+
+/* Configures fotns */
+@font-face {
+	font-family: HindLight;
+	src: url("/Fonts/Hind/Hind-Light.ttf");
+}
+
+@font-face {
+	font-family: HindRegular;
+	src: url("/Fonts/Hind/Hind-Regular.ttf");
 }
