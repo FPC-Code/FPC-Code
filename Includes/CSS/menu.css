@@ -151,7 +151,7 @@ nav {
 		margin-left: 7.5px;
 	}
 
-	@media screen and (max-height: 548px) {
+	@media screen and (max-height: 596px) {
 		.nav-links li {
 			margin: 7.5vh 0;
 		}
