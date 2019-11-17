@@ -123,10 +123,6 @@ h2 {
 	transition: 0.25s;
 }
 
-.text .link {
-	margin-bottom: 50px;
-}
-
 /* Button styles */
 input[type="button"] {
 	background-color: #6e7869;

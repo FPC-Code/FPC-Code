@@ -43,19 +43,16 @@ footer {
 	align-items: center;
 }
 
-/* Text in footer */
-.footer-text {
+/* Contacts in footer */
+.footer-contacts {
 	margin: auto;
 	width: 25%;
 }
 
-.footer-text h4 {
-	font-family: HindLight, sans-serif;
-	color: #f0f1eb;
-	font-size: 28px;
-	align-items: center;
-	text-align: center;
-	font-weight: normal;
+.footer-contacts img {
+	float: right;
+	width: 37.5px;
+	margin: 12.5px 25px;
 }
 
 /* Resize when window size is small */
