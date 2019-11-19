@@ -1,171 +1,171 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-		<link rel="stylesheet" href="/Includes/CSS/menu.css" />
-		<link rel="stylesheet" href="/Includes/CSS/main.css" />
-		<link rel="stylesheet" href="/Includes/CSS/form.css" />
-		<link rel="stylesheet" href="/Includes/CSS/footer.css" />
-		<link rel="shortcut icon" type="image/x-icon" href="/Images/Assets/favicon.png" />
+        <link rel="stylesheet" href="/Includes/CSS/menu.css" />
+        <link rel="stylesheet" href="/Includes/CSS/main.css" />
+        <link rel="stylesheet" href="/Includes/CSS/form.css" />
+        <link rel="stylesheet" href="/Includes/CSS/footer.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="/Images/Assets/favicon.png" />
 
-		<title>FPC Code</title>
-	</head>
+        <title>FPC Code</title>
+    </head>
 
-	<body>
-		<header>
-			<div class="logo-container">
-				<a href="/">
-					<img id="logo" src="/Images/Assets/logo.jpg" alt="FPC Code Logo" />
-				</a>
-			</div>
+    <body>
+        <header>
+            <div class="logo-container">
+                <a href="/">
+                    <img id="logo" src="/Images/Assets/logo.jpg" alt="FPC Code Logo" />
+                </a>
+            </div>
 
-			<nav>
-				<ul class="nav-links">
-					<li>
-						<a class="nav-link" id="home" href="/">Home</a>
-					</li>
-					<li>
-						<a class="nav-link" id="about" href="/about/">About</a>
-					</li>
-					<li>
-						<a class="nav-link" id="officers" href="/officers/">Officers</a>
-					</li>
-					<li>
-						<a class="nav-link" id="projects" href="/projects/">Projects</a>
-					</li>
-				</ul>
+            <nav>
+                <ul class="nav-links">
+                    <li>
+                        <a class="nav-link" id="home" href="/">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" id="about" href="/about/">About</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" id="officers" href="/officers/">Officers</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" id="projects" href="/projects/">Projects</a>
+                    </li>
+                </ul>
 
-				<div class="burger">
-					<div class="line1"></div>
-					<div class="line2"></div>
-					<div class="line3"></div>
-				</div>
-			</nav>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
 
-			<ul class="buttons">
-				<li>
-					<input type="button" onclick="redirect('/join/')" value="Join" />
-				</li>
-				<li>
-					<input type="button" onclick="redirect('/sign-in/')" value="Sign In" />
-				</li>
-			</ul>
-		</header>
+            <ul class="buttons">
+                <li>
+                    <input type="button" onclick="redirect('/join/')" value="Join" />
+                </li>
+                <li>
+                    <input type="button" onclick="redirect('/sign-in/')" value="Sign In" />
+                </li>
+            </ul>
+        </header>
 
-		<main>
-			<div class="home-image">
-				<img src="/Images/Join/join_banner.jpg" alt="Man signing a piece of paper." />
-			</div>
+        <main>
+            <div class="home-image">
+                <img src="/Images/Join/join_banner.jpg" alt="Man signing a piece of paper." />
+            </div>
 
-			<h1>Become A Member</h1>
+            <h1>Become A Member</h1>
 
-			<section id="club-requirements">
-				<h2>Club Requirements</h2>
+            <section id="club-requirements">
+                <h2>Club Requirements</h2>
 
-				<div class="text">
-					<ul>
-						<li>
-							<p>
-								In order to attend club meetings, you
-								<strong>MUST</strong> be a student of
-								<strong>Flagler Palm Coast High School</strong>, there are
-								<strong>NO</strong> exceptions.
-							</p>
+                <div class="text">
+                    <ul>
+                        <li>
+                            <p>
+                                In order to attend club meetings, you
+                                <strong>MUST</strong> be a student of
+                                <strong>Flagler Palm Coast High School</strong>, there are
+                                <strong>NO</strong> exceptions.
+                            </p>
 
-							<p>
-								You also need a working computer capable of running programs such as
-								<strong>Visual Studio Code</strong>
-								after school hours.
-							</p>
-						</li>
-					</ul>
-				</div>
-			</section>
-		</main>
+                            <p>
+                                You also need a working computer capable of running programs such as
+                                <strong>Visual Studio Code</strong>
+                                after school hours.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
 
-		<section id="form">
-			<div class="form-header">
-				<h2>Club Sign-Up</h2>
+        <section id="form">
+            <div class="form-header">
+                <h2>Club Sign-Up</h2>
 
-				<!-- <p>
+                <!-- <p>
 					Fill out the form below to be able to show up to the next meeting.
 				</p> -->
 
-				<p>
-					<strong>Note: Form currently under maintenance. WILL NOT WORK</strong>
-				</p>
-			</div>
+                <p>
+                    <strong>Note: Form currently under maintenance. WILL NOT WORK</strong>
+                </p>
+            </div>
 
-			<div class="form">
-				<form method="POST" action="/includes/php/join.php">
-					<input type="hidden" name="subject" value="New Member" />
+            <div class="form">
+                <form method="POST" action="/includes/php/join.php">
+                    <input type="hidden" name="subject" value="New Member" />
 
-					<h3>Full Name</h3>
+                    <h3>Full Name</h3>
 
-					<input type="text" name="name" placeholder="John Joseph" size="24px" />
+                    <input type="text" name="name" placeholder="John Joseph" size="24px" />
 
-					<h3>School Email</h3>
+                    <h3>School Email</h3>
 
-					<input
-						type="email"
-						name="email"
-						placeholder="johnjos1234@flaglercps.org"
-						size="24px"
-					/>
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="johnjos1234@flaglercps.org"
+                        size="24px"
+                    />
 
-					<h3>Current Grade</h3>
+                    <h3>Current Grade</h3>
 
-					<label class="container"
-						>9th Grade&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="radio" name="grade" value="9th Grade - Freshman" />
-						<span class="checkmark"></span>
-					</label>
+                    <label class="container"
+                        >9th Grade&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="grade" value="9th Grade - Freshman" />
+                        <span class="checkmark"></span>
+                    </label>
 
-					<label class="container"
-						>10th Grade&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="radio" name="grade" value="10th Grade - Sophomore" />
-						<span class="checkmark"></span>
-					</label>
+                    <label class="container"
+                        >10th Grade&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="grade" value="10th Grade - Sophomore" />
+                        <span class="checkmark"></span>
+                    </label>
 
-					<label class="container"
-						>11th Grade&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="radio" name="grade" value="11th Grade - Junior" />
-						<span class="checkmark"></span>
-					</label>
+                    <label class="container"
+                        >11th Grade&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="grade" value="11th Grade - Junior" />
+                        <span class="checkmark"></span>
+                    </label>
 
-					<label class="container"
-						>12th Grade&nbsp;&nbsp;&nbsp;&nbsp;
-						<input type="radio" name="grade" value="12th Grade - Senior" />
-						<span class="checkmark"></span>
-					</label>
+                    <label class="container"
+                        >12th Grade&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="grade" value="12th Grade - Senior" />
+                        <span class="checkmark"></span>
+                    </label>
 
-					<input type="submit" name="submit" value="Submit" />
-				</form>
-			</div>
-		</section>
+                    <input type="submit" name="submit" value="Submit" />
+                </form>
+            </div>
+        </section>
 
-		<footer>
-			<div class="footer-logo">
-				<img src="/Images/Assets/logo.jpg" alt="FPC Code Logo" />
-			</div>
-			<div class="footer-button">
-				<input type="button" onclick="redirect('/home/')" value="Home" />
-			</div>
-			<div class="footer-contacts">
-				<a href="https://github.com/codefpc" target="_blank">
-					<img src="/Images/Assets/SVG/github-brands.svg" alt="Github Icon" />
-				</a>
-				<a href="mailto:mailto:fpc.coding.club@gmail.com" target="_blank">
-					<img src="/Images/Assets/SVG/envelope-solid.svg" alt="Mail Icon" />
-				</a>
-			</div>
-		</footer>
+        <footer>
+            <div class="footer-logo">
+                <img src="/Images/Assets/logo.jpg" alt="FPC Code Logo" />
+            </div>
+            <div class="footer-button">
+                <input type="button" onclick="redirect('/home/')" value="Home" />
+            </div>
+            <div class="footer-contacts">
+                <a href="https://github.com/codefpc" target="_blank">
+                    <img src="/Images/Assets/SVG/github-brands.svg" alt="Github Icon" />
+                </a>
+                <a href="mailto:fpc.coding.club@gmail.com" target="_blank">
+                    <img src="/Images/Assets/SVG/envelope-solid.svg" alt="Mail Icon" />
+                </a>
+            </div>
+        </footer>
 
-		<script src="/Includes/JS/menu.js"></script>
-		<script src="/Includes/JS/script.js"></script>
-	</body>
+        <script src="/Includes/JS/menu.js"></script>
+        <script src="/Includes/JS/script.js"></script>
+    </body>
 </html>
