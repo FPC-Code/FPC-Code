@@ -7,7 +7,7 @@
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
-    padding: 0 25px;
+    padding-top: 50px;
     padding-bottom: 250px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -15,23 +15,31 @@
 }
 
 /* Text for form */
-.form-header {
+.form-title {
     background-color: #779869;
     color: #f0f1eb;
     margin-bottom: 0px;
 }
 
-.form-header h2 {
-    font-size: 34px;
+.form-title h2 {
+    font-size: 46px;
     padding-bottom: 0px;
     margin-bottom: 25px;
 }
 
-.form h3 {
+.form-title p {
+    color: #f0f1eb;
+    font-style: italic;
+    font-size: 18px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.form-header {
     color: #f0f1eb;
     font-size: 30px;
-    padding-top: 50px;
-    padding-bottom: 10px;
+    font-weight: bold;
 }
 
 .form p {
@@ -40,15 +48,6 @@
     padding-bottom: 0px;
     padding-top: 10px;
     font-style: italic;
-}
-
-.form-header p {
-    color: #f0f1eb;
-    font-style: italic;
-    font-size: 18px;
-    padding-bottom: 15px;
-    margin-bottom: 50px;
-    text-align: center;
 }
 
 /* Text input styles */
@@ -64,12 +63,29 @@ input[type="text"] {
     border-style: solid;
     font-size: 18pt;
     margin: auto;
-    margin-bottom: 25px;
+    margin-top: 12.5px;
+    margin-bottom: 50px;
     padding: 5px;
+    text-align: left;
 }
 
-.large-text input[type="text"] {
+textarea {
+    display: block;
+    width: 450px;
     height: 175px;
+    border-width: 0px;
+    border-radius: 5px;
+    color: #6e7869;
+    background-color: #f0f1eb;
+    border-color: #212922;
+    border-style: solid;
+    font-size: 18pt;
+    margin: auto;
+    margin-top: 12.5px;
+    margin-bottom: 50px;
+    padding: 5px;
+    text-align: left;
+    resize: none;
 }
 
 input[type="email"] {
@@ -84,7 +100,8 @@ input[type="email"] {
     border-style: solid;
     font-size: 18pt;
     margin: auto;
-    margin-bottom: 25px;
+    margin-top: 12.5px;
+    margin-bottom: 50px;
     padding: 5px;
 }
 
@@ -112,70 +129,68 @@ input[type="submit"]:hover {
     background-color: #939a9c;
 }
 
-/* Sets container for checkmark sections */
-
+/* The container */
 .container {
     display: block;
     position: relative;
-    margin-left: 25px;
-    margin-top: 25px;
-    margin-bottom: 50px;
+    padding-left: 35px;
+    margin-bottom: 12px;
     cursor: pointer;
     font-size: 24px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    text-align: center;
-    color: #f0f1eb;
+    text-align: right;
 }
 
-/* Hide default radio buttons */
+.buttons {
+    display: block;
+    margin-top: 12.5px;
+}
 
+/* Hide the browser's default radio button */
 .container input {
-    position: relative;
+    position: absolute;
     opacity: 0;
     cursor: pointer;
-    font-size: 18px;
 }
 
-/* Create radio buttons */
-
+/* Create a custom radio button */
 .checkmark {
     position: absolute;
     top: 0;
+    left: 0;
     height: 25px;
     width: 25px;
     background-color: #f0f1eb;
     border-radius: 50%;
 }
 
-/* Adds background color when hovered over */
-
+/* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
-    background-color: #939a9c;
+    background-color: #939c9a;
 }
 
-/* Adds background when checked */
-
+/* When the radio button is checked, add a blue background */
 .container input:checked ~ .checkmark {
     background-color: #6e7869;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
-
 .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
 
-/* Style the indicator (dot/circle) */
-
-.container .checkmark:after {
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
     display: block;
-    animation-name: zoom;
-    animation-duration: 0.25s;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
     top: 9px;
     left: 9px;
     width: 8px;
@@ -190,11 +205,9 @@ input[type="submit"]:hover {
         width: 400px;
     }
 
-    input[type="text"] {
-        width: 350px;
-    }
-
-    input[type="email"] {
+    input[type="text"],
+    input[type="email"],
+    textarea {
         width: 350px;
     }
 }

@@ -67,22 +67,14 @@
             <h1>Contact Us</h1>
 
             <section id="club-requirements">
-                <h2>Club Requirements</h2>
+                <h2>Be Patient</h2>
 
                 <div class="text">
                     <ul>
                         <li>
                             <p>
-                                In order to attend club meetings, you
-                                <strong>MUST</strong> be a student of
-                                <strong>Flagler Palm Coast High School</strong>, there are
-                                <strong>NO</strong> exceptions.
-                            </p>
-
-                            <p>
-                                You also need a working computer capable of running programs such as
-                                <strong>Visual Studio Code</strong>
-                                after school hours.
+                                We'll get back to you as soon as we can. Please wait one business
+                                day untill contacting us again.
                             </p>
                         </li>
                     </ul>
@@ -105,23 +97,21 @@
 
             <div class="form">
                 <form method="POST" action="/includes/php/join.php">
-                    <input type="hidden" name="subject" value="New Member" />
+                    <label class="form-header" for="name">Name</label>
+                    <input type="text" name="name" placeholder="What's your first and last name?" />
 
-                    <h3>Name</h3>
+                    <label class="form-header" for="email">Email</label>
+                    <input type="email" name="email" placeholder="What's your email address?" />
 
-                    <input type="text" name="name" placeholder="John Doe" />
+                    <label class="form-header" for="subject">Subject</label>
+                    <input type="text" name="subject" placeholder="What is this about?" />
 
-                    <h3>Email</h3>
-
-                    <input type="email" name="email" placeholder="johndoe@email.com" />
-
-                    <h3>Subject</h3>
-
-                    <input type="text" name="subject" />
-
-                    <h3>Message</h3>
-
-                    <input type="text" name="message" />
+                    <label class="form-header" for="message">Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="What do you want to tell us?"
+                    ></textarea>
 
                     <input type="submit" name="submit" value="Submit" />
                 </form>

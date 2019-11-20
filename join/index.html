@@ -91,7 +91,7 @@
         </main>
 
         <section id="join-form">
-            <div class="form-header">
+            <div class="form-title">
                 <h2>Club Sign-Up</h2>
 
                 <!-- <p>
@@ -107,39 +107,39 @@
                 <form method="POST" action="/includes/php/join.php">
                     <input type="hidden" name="subject" value="New Member" />
 
-                    <h3>Full Name</h3>
-
+                    <label class="form-header" for="fname">Full Name</label>
                     <input type="text" name="name" placeholder="John Doe" />
 
-                    <h3>School Email</h3>
-
+                    <label class="form-header" for="semail">School Email</label>
                     <input type="email" name="email" placeholder="johndoe1234@flaglercps.org" />
 
-                    <h3>Current Grade</h3>
+                    <label class="form-header" for="grade">Current Grade</label>
 
-                    <label class="container"
-                        >9th Grade&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="radio" name="grade" value="9th Grade - Freshman" />
-                        <span class="checkmark"></span>
-                    </label>
+                    <div class="buttons">
+                        <label class="container"
+                            >9th
+                            <input type="radio" checked="checked" name="radio" />
+                            <span class="checkmark"></span>
+                        </label>
 
-                    <label class="container"
-                        >10th Grade&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="radio" name="grade" value="10th Grade - Sophomore" />
-                        <span class="checkmark"></span>
-                    </label>
+                        <label class="container"
+                            >10th
+                            <input type="radio" name="radio" />
+                            <span class="checkmark"></span>
+                        </label>
 
-                    <label class="container"
-                        >11th Grade&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="radio" name="grade" value="11th Grade - Junior" />
-                        <span class="checkmark"></span>
-                    </label>
+                        <label class="container"
+                            >11th
+                            <input type="radio" name="radio" />
+                            <span class="checkmark"></span>
+                        </label>
 
-                    <label class="container"
-                        >12th Grade&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="radio" name="grade" value="12th Grade - Senior" />
-                        <span class="checkmark"></span>
-                    </label>
+                        <label class="container"
+                            >12th
+                            <input type="radio" name="radio" />
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
 
                     <input type="submit" name="submit" value="Submit" />
                 </form>
