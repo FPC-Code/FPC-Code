@@ -8,10 +8,11 @@
 
         <link rel="stylesheet" href="/Includes/CSS/menu.css" />
         <link rel="stylesheet" href="/Includes/CSS/main.css" />
+        <link rel="stylesheet" href="/Includes/CSS/form.css" />
         <link rel="stylesheet" href="/Includes/CSS/footer.css" />
         <link rel="shortcut icon" type="image/x-icon" href="/Images/Assets/favicon.png" />
 
-        <title>FPC Code - Sorry!</title>
+        <title>FPC Code - Contact</title>
     </head>
 
     <body>
@@ -60,51 +61,72 @@
 
         <main>
             <div class="home-image">
-                <img src="/Images/Home/home_banner.jpg" alt="Code on a screen." />
+                <img src="/Images/Thanks/thanks_banner.jpg" alt="Man signing a piece of paper." />
             </div>
 
-            <h1>We Are So Sorry!</h1>
+            <h1>Contact Us</h1>
 
-            <section id="sorry">
-                <h2>Something Broke</h2>
-
-                <div class="text">
-                    <ul>
-                        <li>
-                            <p>
-                                For some reason, our form is broken!
-                            </p>
-                            <p>
-                                Please email the system administrator at
-                                <a href="mailto:gavinmor2143@flaglercps.org"
-                                    >gavinmor2143@flaglercps.org</a
-                                >
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <section id="join-today">
-                <h2>Join Today</h2>
+            <section id="club-requirements">
+                <h2>Club Requirements</h2>
 
                 <div class="text">
                     <ul>
                         <li>
                             <p>
-                                Before you can attend meetings, you need to fill out a form to let
-                                us know a little bit about yourself.
+                                In order to attend club meetings, you
+                                <strong>MUST</strong> be a student of
+                                <strong>Flagler Palm Coast High School</strong>, there are
+                                <strong>NO</strong> exceptions.
                             </p>
 
                             <p>
-                                Once we receive your submission, we expect to see you at the next
-                                meeting.
+                                You also need a working computer capable of running programs such as
+                                <strong>Visual Studio Code</strong>
+                                after school hours.
                             </p>
                         </li>
                     </ul>
                 </div>
             </section>
         </main>
+
+        <section id="contact-form">
+            <div class="form-header">
+                <h2>Contact Form</h2>
+
+                <!-- <p>
+					Fill out the form below to contact us.
+				</p> -->
+
+                <p>
+                    <strong>Note: Form currently under maintenance. WILL NOT WORK</strong>
+                </p>
+            </div>
+
+            <div class="form">
+                <form method="POST" action="/includes/php/join.php">
+                    <input type="hidden" name="subject" value="New Member" />
+
+                    <h3>Name</h3>
+
+                    <input type="text" name="name" placeholder="John Doe" />
+
+                    <h3>Email</h3>
+
+                    <input type="email" name="email" placeholder="johndoe@email.com" />
+
+                    <h3>Subject</h3>
+
+                    <input type="text" name="subject" />
+
+                    <h3>Message</h3>
+
+                    <input type="text" name="message" />
+
+                    <input type="submit" name="submit" value="Submit" />
+                </form>
+            </div>
+        </section>
 
         <footer>
             <div class="footer-logo">
