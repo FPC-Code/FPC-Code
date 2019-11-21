@@ -10,7 +10,11 @@
 		<link rel="stylesheet" href="/Includes/CSS/main.css" />
 		<link rel="stylesheet" href="/Includes/CSS/form.css" />
 		<link rel="stylesheet" href="/Includes/CSS/footer.css" />
-		<link rel="shortcut icon" type="image/x-icon" href="/Images/Assets/favicon.png" />
+		<link
+			rel="shortcut icon"
+			type="image/x-icon"
+			href="/Images/Assets/ICO/fpc_code_trademark_dark.ico"
+		/>
 
 		<title>FPC Code - Join</title>
 	</head>
@@ -19,7 +23,11 @@
 		<header>
 			<div class="logo-container">
 				<a href="/">
-					<img src="/Images/Assets/main logo.jpg" alt="FPC Code Logo" />
+					<img
+						id="logo"
+						src="/Images/Assets/SVG/fpc_code_logo_light.svg"
+						alt="FPC Code Logo"
+					/>
 				</a>
 			</div>
 
@@ -36,6 +44,9 @@
 					</li>
 					<li>
 						<a class="nav-link" id="projects" href="/projects/">Projects</a>
+					</li>
+					<li>
+						<a class="nav-link" id="contact" href="/contact/">Contact</a>
 					</li>
 				</ul>
 
@@ -58,7 +69,7 @@
 
 		<main>
 			<div class="home-image">
-				<img src="/Images/Join/join_banner.jpg" alt="Code on a screen." />
+				<img src="/Images/Join/join_banner.jpg" alt="Man signing a piece of paper." />
 			</div>
 
 			<h1>Become A Member</h1>
@@ -87,8 +98,8 @@
 			</section>
 		</main>
 
-		<section id="form">
-			<div class="form-header">
+		<section id="join-form">
+			<div class="form-title">
 				<h2>Club Sign-Up</h2>
 
 				<!-- <p>
@@ -101,70 +112,66 @@
 			</div>
 
 			<div class="form">
-				<center>
-					<form method="POST" action="mailto:galvantua@gmail.com">
-						<input type="hidden" name="subject" value="New Member" />
+				<form method="POST" action="/Includes/PHP/join.php">
+					<input type="hidden" name="subject" value="New Member" />
 
-						<h3>Full Name</h3>
+					<label class="form-header" for="fname">Full Name</label>
+					<input type="text" name="name" placeholder="What's your full name?" />
 
-						<input type="text" name="name" placeholder="John Joseph" size="24px" />
+					<label class="form-header" for="semail">School Email</label>
+					<input type="email" name="email" placeholder="What's your school email?" />
 
-						<h3>School Email</h3>
+					<label class="form-header" for="grade">Current Grade</label>
 
-						<input
-							type="email"
-							name="email"
-							placeholder="johnjos1234@flaglercps.org"
-							size="24px"
-						/>
-
-						<h3>Current Grade</h3>
-
+					<div class="radio-buttons">
 						<label class="container"
-							>9th Grade&nbsp;&nbsp;&nbsp;&nbsp;
-							<input type="radio" name="grade" value="9th Grade - Freshman" />
+							>9th (Freshman)
+							<input type="radio" checked="checked" name="radio" />
 							<span class="checkmark"></span>
 						</label>
 
 						<label class="container"
-							>10th Grade&nbsp;&nbsp;&nbsp;&nbsp;
-							<input type="radio" name="grade" value="10th Grade - Sophomore" />
+							>10th (Sophmore)
+							<input type="radio" name="radio" />
 							<span class="checkmark"></span>
 						</label>
 
 						<label class="container"
-							>11th Grade&nbsp;&nbsp;&nbsp;&nbsp;
-							<input type="radio" name="grade" value="11th Grade - Junior" />
+							>11th (Junior)
+							<input type="radio" name="radio" />
 							<span class="checkmark"></span>
 						</label>
 
 						<label class="container"
-							>12th Grade&nbsp;&nbsp;&nbsp;&nbsp;
-							<input type="radio" name="grade" value="12th Grade - Senior" />
+							>12th (Senior)
+							<input type="radio" name="radio" />
 							<span class="checkmark"></span>
 						</label>
+					</div>
 
-						<input type="submit" name="submit" value="Submit" />
-					</form>
-				</center>
+					<input type="submit" name="submit" value="Submit" />
+				</form>
 			</div>
 		</section>
 
 		<footer>
 			<div class="footer-logo">
-				<img src="/Images/Assets/main logo.jpg" alt="FPC Code Logo" />
+				<img src="/Images/Assets/SVG/fpc_code_trademark_light.svg" alt="FPC Code Logo" />
 			</div>
-
 			<div class="footer-button">
-				<input type="button" onclick="redirect('/')" value="Home" />
+				<input type="button" onclick="redirect('/home/')" value="Home" />
 			</div>
-
-			<div class="footer-text">
-				<h4>FPC Code</h4>
+			<div class="footer-contacts">
+				<a href="https://github.com/codefpc" target="_blank">
+					<img src="/Images/Assets/SVG/github-brands.svg" alt="Github Icon" />
+				</a>
+				<a href="mailto:fpc.coding.club@gmail.com" target="_blank">
+					<img src="/Images/Assets/SVG/envelope-solid.svg" alt="Mail Icon" />
+				</a>
 			</div>
 		</footer>
 
-		<script src="/Includes/JS/script.js"></script>
 		<script src="/Includes/JS/menu.js"></script>
+		<script src="/Includes/JS/script.js"></script>
 	</body>
 </html>

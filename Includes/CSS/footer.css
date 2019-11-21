@@ -1,7 +1,7 @@
 /* Footer styles */
 footer {
 	background-color: #212922;
-	height: 200px;
+	height: 150px;
 	align-items: center;
 	width: 100%;
 	display: flex;
@@ -29,6 +29,7 @@ footer {
 /* Button in footer */
 .footer-button input[type="button"] {
 	font-family: HindRegular, sans-serif;
+	line-height: 37.5px;
 	width: 150px;
 	height: 75px;
 	font-size: 26px;
@@ -43,19 +44,16 @@ footer {
 	align-items: center;
 }
 
-/* Text in footer */
-.footer-text {
+/* Contacts in footer */
+.footer-contacts {
 	margin: auto;
 	width: 25%;
 }
 
-.footer-text h4 {
-	font-family: HindLight, sans-serif;
-	color: #f0f1eb;
-	font-size: 28px;
-	align-items: center;
-	text-align: center;
-	font-weight: normal;
+.footer-contacts img {
+	float: right;
+	width: 37.5px;
+	margin: 12.5px 25px;
 }
 
 /* Resize when window size is small */

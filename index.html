@@ -9,7 +9,11 @@
 		<link rel="stylesheet" href="/Includes/CSS/menu.css" />
 		<link rel="stylesheet" href="/Includes/CSS/main.css" />
 		<link rel="stylesheet" href="/Includes/CSS/footer.css" />
-		<link rel="shortcut icon" type="image/x-icon" href="/Images/Assets/favicon.png" />
+		<link
+			rel="shortcut icon"
+			type="image/x-icon"
+			href="/Images/Assets/ICO/fpc_code_trademark_dark.ico"
+		/>
 
 		<title>FPC Code</title>
 	</head>
@@ -18,7 +22,11 @@
 		<header>
 			<div class="logo-container">
 				<a href="/">
-					<img id="logo" src="/Images/Assets/main logo.jpg" alt="FPC Code Logo" />
+					<img
+						id="logo"
+						src="/Images/Assets/SVG/fpc_code_logo_light.svg"
+						alt="FPC Code Logo"
+					/>
 				</a>
 			</div>
 
@@ -35,6 +43,9 @@
 					</li>
 					<li>
 						<a class="nav-link" id="projects" href="/projects/">Projects</a>
+					</li>
+					<li>
+						<a class="nav-link" id="contact" href="/contact/">Contact</a>
 					</li>
 				</ul>
 
@@ -57,10 +68,10 @@
 
 		<main>
 			<div class="home-image">
-				<img src="/Images/Home/home_banner.jpg" alt="Code on a screen." />
+				<img src="/Images/Home/home_banner.jpg" alt="Binary code on a screen." />
 			</div>
 
-			<h1>Welcome to the Coding Club</h1>
+			<h1>Welcome to FPC Code</h1>
 
 			<section id="learn-web-development">
 				<h2>Learn Web Development</h2>
@@ -98,13 +109,6 @@
 								We encourage teamwork within a developer workflow.
 							</p>
 						</li>
-
-						<li>
-							<img
-								src="/Images/Home/home_vscode.jpg"
-								alt="Code in Visual Studio Code"
-							/>
-						</li>
 					</ul>
 				</div>
 			</section>
@@ -124,13 +128,6 @@
 								with an amazing website.
 							</p>
 						</li>
-
-						<li>
-							<img
-								src="/Images/Home/home_community.jpg"
-								alt="View over suburban neighborhood."
-							/>
-						</li>
 					</ul>
 				</div>
 
@@ -147,9 +144,11 @@
 								also reward you with community service hours.
 							</p>
 						</li>
-
 						<li>
-							<img src="/Images/Home/home_meeting.jpg" alt="Empty meeting table." />
+							<img
+								src="/Images/Home/home_community.jpg"
+								alt="View of suburban neighborhood."
+							/>
 						</li>
 					</ul>
 				</div>
@@ -167,9 +166,12 @@
 							</p>
 
 							<p>
-								Once we receive your submission, we expect to see you at the next
-								meeting.
+								Click the button below to go there.
 							</p>
+
+							<div class="link">
+								<input type="button" onclick="redirect('/join/')" value="Join" />
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -178,17 +180,22 @@
 
 		<footer>
 			<div class="footer-logo">
-				<img src="/Images/Assets/main logo.jpg" alt="FPC Code Logo" />
+				<img src="/Images/Assets/SVG/fpc_code_trademark_light.svg" alt="FPC Code Logo" />
 			</div>
 			<div class="footer-button">
 				<input type="button" onclick="redirect('/join/')" value="Join Now" />
 			</div>
-			<div class="footer-text">
-				<h4>FPC Code</h4>
+			<div class="footer-contacts">
+				<a href="https://github.com/codefpc" target="_blank">
+					<img src="/Images/Assets/SVG/github-brands.svg" alt="Github Icon" />
+				</a>
+				<a href="mailto:fpc.coding.club@gmail.com" target="_blank">
+					<img src="/Images/Assets/SVG/envelope-solid.svg" alt="Mail Icon" />
+				</a>
 			</div>
 		</footer>
 
-		<script src="/Includes/JS/script.js"></script>
 		<script src="/Includes/JS/menu.js"></script>
+		<script src="/Includes/JS/script.js"></script>
 	</body>
 </html>

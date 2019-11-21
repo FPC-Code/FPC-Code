@@ -9,7 +9,11 @@
 		<link rel="stylesheet" href="/Includes/CSS/menu.css" />
 		<link rel="stylesheet" href="/Includes/CSS/main.css" />
 		<link rel="stylesheet" href="/Includes/CSS/footer.css" />
-		<link rel="shortcut icon" type="image/x-icon" href="/Images/Assets/favicon.png" />
+		<link
+			rel="shortcut icon"
+			type="image/x-icon"
+			href="/Images/Assets/ICO/fpc_code_trademark_dark.ico"
+		/>
 
 		<title>FPC Code - About</title>
 	</head>
@@ -18,7 +22,11 @@
 		<header>
 			<div class="logo-container">
 				<a href="/">
-					<img src="/Images/Assets/main logo.jpg" alt="FPC Code Logo" />
+					<img
+						id="logo"
+						src="/Images/Assets/SVG/fpc_code_logo_light.svg"
+						alt="FPC Code Logo"
+					/>
 				</a>
 			</div>
 
@@ -35,6 +43,9 @@
 					</li>
 					<li>
 						<a class="nav-link" id="projects" href="/projects/">Projects</a>
+					</li>
+					<li>
+						<a class="nav-link" id="contact" href="/contact/">Contact</a>
 					</li>
 				</ul>
 
@@ -57,7 +68,7 @@
 
 		<main>
 			<div class="home-image">
-				<img src="/Images/About/about_banner.jpg" alt="Code on a screen." />
+				<img src="/Images/About/about_banner.jpg" alt="A notebook and laptop on a table." />
 			</div>
 
 			<h1>Learn About Our Club</h1>
@@ -125,12 +136,6 @@
 								can be put on resumes and applications.
 							</p>
 						</li>
-						<li>
-							<img
-								src="/Images/About/about_teamwork.jpg"
-								alt="Office team putting hands together over table."
-							/>
-						</li>
 					</ul>
 				</div>
 			</section>
@@ -153,12 +158,6 @@
 								<strong>2-110</strong>.
 							</p>
 						</li>
-						<li>
-							<img
-								src="/Images/About/about_time.jpg"
-								alt="Clock infront of skyscraper."
-							/>
-						</li>
 					</ul>
 				</div>
 			</section>
@@ -166,19 +165,22 @@
 
 		<footer>
 			<div class="footer-logo">
-				<img src="/Images/Assets/main logo.jpg" alt="FPC Code Logo" />
+				<img src="/Images/Assets/SVG/fpc_code_trademark_light.svg" alt="FPC Code Logo" />
 			</div>
-
 			<div class="footer-button">
 				<input type="button" onclick="redirect('/join/')" value="Join Now" />
 			</div>
-
-			<div class="footer-text">
-				<h4>FPC Code</h4>
+			<div class="footer-contacts">
+				<a href="https://github.com/codefpc" target="_blank">
+					<img src="/Images/Assets/SVG/github-brands.svg" alt="Github Icon" />
+				</a>
+				<a href="mailto:fpc.coding.club@gmail.com" target="_blank">
+					<img src="/Images/Assets/SVG/envelope-solid.svg" alt="Mail Icon" />
+				</a>
 			</div>
 		</footer>
 
-		<script src="/Includes/JS/script.js"></script>
 		<script src="/Includes/JS/menu.js"></script>
+		<script src="/Includes/JS/script.js"></script>
 	</body>
 </html>

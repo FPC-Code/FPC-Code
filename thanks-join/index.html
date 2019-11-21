@@ -9,16 +9,24 @@
 		<link rel="stylesheet" href="/Includes/CSS/menu.css" />
 		<link rel="stylesheet" href="/Includes/CSS/main.css" />
 		<link rel="stylesheet" href="/Includes/CSS/footer.css" />
-		<link rel="shortcut icon" type="image/x-icon" href="/Images/Assets/favicon.png" />
+		<link
+			rel="shortcut icon"
+			type="image/x-icon"
+			href="/Images/Assets/ICO/fpc_code_trademark_dark.ico"
+		/>
 
-		<title>FPC Code - Thanks!</title>
+		<title>FPC Code - Thank You!</title>
 	</head>
 
 	<body>
 		<header>
 			<div class="logo-container">
 				<a href="/">
-					<img src="/Images/Assets/main logo.jpg" alt="FPC Code Logo" />
+					<img
+						id="logo"
+						src="/Images/Assets/SVG/fpc_code_logo_light.svg"
+						alt="FPC Code Logo"
+					/>
 				</a>
 			</div>
 
@@ -35,6 +43,9 @@
 					</li>
 					<li>
 						<a class="nav-link" id="projects" href="/projects/">Projects</a>
+					</li>
+					<li>
+						<a class="nav-link" id="contact" href="/contact/">Contact</a>
 					</li>
 				</ul>
 
@@ -62,37 +73,42 @@
 
 			<h1>Thank You</h1>
 
-			<section id="wait-for-contact">
-				<h2>Come Join Us</h2>
+			<section id="wait-for-confirmation">
+				<h2>Wait for Confirmation</h2>
 
 				<div class="text">
 					<ul>
 						<li>
 							<p>
 								Once we have received your request we will contact you back to
-								confirm your participation in our club.
+								confirm that your submission was received.
 							</p>
 
 							<p>
-								After that, you're all ready to come to the next meeting!
+								After examining your form we will will decide wether or not you can
+								join FPC Code.
+							</p>
+
+							<p>
+								We will be sure to tell you as soon as we can.
 							</p>
 						</li>
 					</ul>
 				</div>
 			</section>
 
-			<section id="thank-you-for-joining">
-				<h2>Thank You For Joining</h2>
+			<section id="thank-you-for-your-consideration">
+				<h2>Thank You For Your Consideration</h2>
 
 				<div class="text">
 					<ul>
 						<li>
 							<p>
-								We value every member that joins!
+								We value every person that wants to be apart of our organization!
 							</p>
 
 							<p>
-								We hope you tell others about us!
+								We encourage you to tell others about us.
 							</p>
 						</li>
 					</ul>
@@ -102,19 +118,22 @@
 
 		<footer>
 			<div class="footer-logo">
-				<img src="/Images/Assets/main logo.jpg" alt="FPC Code Logo" />
+				<img src="/Images/Assets/SVG/fpc_code_trademark_light.svg" alt="FPC Code Logo" />
 			</div>
-
 			<div class="footer-button">
-				<input type="button" onclick="redirect('/')" value="Home" />
+				<input type="button" onclick="redirect('/home/')" value="Home" />
 			</div>
-
-			<div class="footer-text">
-				<h4>FPC Code</h4>
+			<div class="footer-contacts">
+				<a href="https://github.com/codefpc" target="_blank">
+					<img src="/Images/Assets/SVG/github-brands.svg" alt="Github Icon" />
+				</a>
+				<a href="mailto:fpc.coding.club@gmail.com" target="_blank">
+					<img src="/Images/Assets/SVG/envelope-solid.svg" alt="Mail Icon" />
+				</a>
 			</div>
 		</footer>
 
-		<script src="/Includes/JS/script.js"></script>
 		<script src="/Includes/JS/menu.js"></script>
+		<script src="/Includes/JS/script.js"></script>
 	</body>
 </html>

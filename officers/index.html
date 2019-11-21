@@ -10,7 +10,11 @@
 		<link rel="stylesheet" href="/Includes/CSS/main.css" />
 		<link rel="stylesheet" href="/Includes/CSS/officers.css" />
 		<link rel="stylesheet" href="/Includes/CSS/footer.css" />
-		<link rel="shortcut icon" type="image/x-icon" href="/Images/Assets/favicon.png" />
+		<link
+			rel="shortcut icon"
+			type="image/x-icon"
+			href="/Images/Assets/ICO/fpc_code_trademark_dark.ico"
+		/>
 
 		<title>FPC Code - Officers</title>
 	</head>
@@ -19,7 +23,11 @@
 		<header>
 			<div class="logo-container">
 				<a href="/">
-					<img src="/Images/Assets/main logo.jpg" alt="FPC Code Logo" />
+					<img
+						id="logo"
+						src="/Images/Assets/SVG/fpc_code_logo_light.svg"
+						alt="FPC Code Logo"
+					/>
 				</a>
 			</div>
 
@@ -36,6 +44,9 @@
 					</li>
 					<li>
 						<a class="nav-link" id="projects" href="/projects/">Projects</a>
+					</li>
+					<li>
+						<a class="nav-link" id="contact" href="/contact/">Contact</a>
 					</li>
 				</ul>
 
@@ -64,7 +75,7 @@
 				/>
 			</div>
 
-			<h1>Meet Our Officers</h1>
+			<h1>Meet the Team</h1>
 
 			<section id="officers">
 				<h2>Our Officers</h2>
@@ -73,6 +84,13 @@
 					<ul>
 						<li>
 							<h3>President</h3>
+
+							<div class="information">
+								<p>
+									Head leader who monitors all activity and assists with large
+									projects.
+								</p>
+							</div>
 
 							<h4>Gavin Morton</h4>
 
@@ -83,7 +101,13 @@
 							</div>
 						</li>
 						<li>
-							<h3>Vice-President</h3>
+							<h3>Vice President</h3>
+
+							<div class="information">
+								<p>
+									Assists the president with projects and decisions.
+								</p>
+							</div>
 
 							<h4>Morgan Hale</h4>
 
@@ -92,7 +116,30 @@
 							</div>
 						</li>
 						<li>
+							<h3>Server Administrator</h3>
+
+							<div class="information">
+								<p>
+									Maintains and manages the servers we use to host our websites.
+								</p>
+							</div>
+
+							<h4>Rob Miller</h4>
+
+							<div class="information">
+								<a href="mailto:robertmil0343@flaglercps.org"
+									>robertmil0343@flaglercps.org</a
+								>
+							</div>
+						</li>
+						<li>
 							<h3>Secretary</h3>
+
+							<div class="information">
+								<p>
+									Manages meetings and keeps records of decisions made.
+								</p>
+							</div>
 
 							<h4>Draven Monterrosa</h4>
 
@@ -105,23 +152,26 @@
 						<li>
 							<h3>Treasurer</h3>
 
+							<div class="information">
+								<p>
+									Keeps track of our funds and spending.
+								</p>
+							</div>
+
 							<h4>Alan Hale</h4>
 
 							<div class="information">
 								<a href="mailto:alan@thesfcc.com">alan@thesfcc.com</a>
 							</div>
 						</li>
-						<!-- <li>
-							<h3>Public Affairs</h3>
-
-							<h4>Benjamin Cruz</h4>
-
-							<div class="information">
-								<a href="mailto:benjammincruz@gmail.com">benjammincruz@gmail.com</a>
-							</div>
-						</li> -->
 						<li>
 							<h3>Club Sponsor</h3>
+
+							<div class="information">
+								<p>
+									Provides rooms for meetings and monitors our work.
+								</p>
+							</div>
 
 							<h4>Mrs. Casta&ntilde;eda</h4>
 
@@ -146,19 +196,22 @@
 
 		<footer>
 			<div class="footer-logo">
-				<img src="/Images/Assets/main logo.jpg" alt="FPC Code Logo" />
+				<img src="/Images/Assets/SVG/fpc_code_trademark_light.svg" alt="FPC Code Logo" />
 			</div>
-
 			<div class="footer-button">
 				<input type="button" onclick="redirect('/join/')" value="Join Now" />
 			</div>
-
-			<div class="footer-text">
-				<h4>FPC Code</h4>
+			<div class="footer-contacts">
+				<a href="https://github.com/codefpc" target="_blank">
+					<img src="/Images/Assets/SVG/github-brands.svg" alt="Github Icon" />
+				</a>
+				<a href="mailto:fpc.coding.club@gmail.com" target="_blank">
+					<img src="/Images/Assets/SVG/envelope-solid.svg" alt="Mail Icon" />
+				</a>
 			</div>
 		</footer>
 
-		<script src="/Includes/JS/script.js"></script>
 		<script src="/Includes/JS/menu.js"></script>
+		<script src="/Includes/JS/script.js"></script>
 	</body>
 </html>

@@ -8,6 +8,7 @@
 
 		<link rel="stylesheet" href="/Includes/CSS/menu.css" />
 		<link rel="stylesheet" href="/Includes/CSS/main.css" />
+		<link rel="stylesheet" href="/Includes/CSS/form.css" />
 		<link rel="stylesheet" href="/Includes/CSS/footer.css" />
 		<link
 			rel="shortcut icon"
@@ -15,7 +16,7 @@
 			href="/Images/Assets/ICO/fpc_code_trademark_dark.ico"
 		/>
 
-		<title>FPC Code - Thank You!</title>
+		<title>FPC Code - Contact</title>
 	</head>
 
 	<body>
@@ -68,72 +69,20 @@
 
 		<main>
 			<div class="home-image">
-				<img src="/Images/Thanks/thanks_banner.jpg" alt="People surrounding a computer." />
+				<img src="/Images/Thanks/thanks_banner.jpg" alt="Man signing a piece of paper." />
 			</div>
 
-			<h1>Thank You</h1>
+			<h1>Contact Us</h1>
 
-			<section id="wait-for-contact">
-				<h2>Wait For Contact</h2>
-
-				<div class="text">
-					<ul>
-						<li>
-							<p>
-								Once we have received your request we will not hesitate to get back
-								to you and confirm your submission.
-							</p>
-
-							<p>
-								We would appreciate it if you refrain from trying to contact us
-								again for at least a full business day.
-							</p>
-						</li>
-					</ul>
-				</div>
-			</section>
-
-			<section id="further-discussion">
-				<h2>Further Discussion</h2>
+			<section id="club-requirements">
+				<h2>Please Be Patient</h2>
 
 				<div class="text">
 					<ul>
 						<li>
 							<p>
-								The form you submitted gives us a good idea on what you want, but in
-								order to give you the product you desire we need to talk with you
-								further.
-							</p>
-
-							<p>
-								We will mainly communicate through e-mail, but we will be able to
-								contact you in other ways, such as text messaging and third-party
-								services.
-							</p>
-
-							<p>
-								We will be quick to respond to your messages and we hope you will
-								too!
-							</p>
-						</li>
-					</ul>
-				</div>
-			</section>
-
-			<section id="thank-you-for-choosing-us">
-				<h2>Thank You For Choosing Us</h2>
-
-				<div class="text">
-					<ul>
-						<li>
-							<p>
-								We value every client we receive and give them the best service we
-								can offer!
-							</p>
-
-							<p>
-								We hope you choose us again and encourage you to tell others about
-								us.
+								We'll get back to you as soon as we can. Please wait one business
+								day untill contacting us again.
 							</p>
 						</li>
 					</ul>
@@ -141,12 +90,48 @@
 			</section>
 		</main>
 
+		<section id="contact-form">
+			<div class="form-title">
+				<h2>Contact Form</h2>
+
+				<!-- <p>
+					Fill out the form below to contact us.
+				</p> -->
+
+				<p>
+					<strong>Note: Form currently under maintenance. WILL NOT WORK</strong>
+				</p>
+			</div>
+
+			<div class="form">
+				<form method="POST" action="/Includes/PHP/contact.php">
+					<label class="form-header" for="name">Name</label>
+					<input type="text" name="name" placeholder="What's your full name?" />
+
+					<label class="form-header" for="email">Email</label>
+					<input type="email" name="email" placeholder="What's your email address?" />
+
+					<label class="form-header" for="subject">Subject</label>
+					<input type="text" name="subject" placeholder="What is this about?" />
+
+					<label class="form-header" for="message">Message</label>
+					<textarea
+						id="message"
+						name="message"
+						placeholder="What do you want to tell us?"
+					></textarea>
+
+					<input type="submit" name="submit" value="Submit" />
+				</form>
+			</div>
+		</section>
+
 		<footer>
 			<div class="footer-logo">
 				<img src="/Images/Assets/SVG/fpc_code_trademark_light.svg" alt="FPC Code Logo" />
 			</div>
 			<div class="footer-button">
-				<input type="button" onclick="redirect('/join/')" value="Join Now" />
+				<input type="button" onclick="redirect('/home/')" value="Home" />
 			</div>
 			<div class="footer-contacts">
 				<a href="https://github.com/codefpc" target="_blank">
