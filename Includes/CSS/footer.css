@@ -1,63 +1,64 @@
 /* Footer styles */
 footer {
-    background-color: #212922;
-    height: 150px;
-    align-items: center;
-    width: 100%;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    bottom: 0;
-    transition: 0.25s;
+	background-color: #212922;
+	height: 150px;
+	align-items: center;
+	width: 100%;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	bottom: 0;
+	transition: 0.25s;
 }
 
 /* Logo in footer */
 .footer-logo {
-    width: 75px;
-    margin: auto;
-    align-content: center;
-    justify-content: center;
-    width: 25%;
+	width: 75px;
+	margin: auto;
+	align-content: center;
+	justify-content: center;
+	width: 25%;
 }
 
 .footer-logo img {
-    width: 75px;
-    align-self: center;
-    justify-self: center;
+	width: 75px;
+	align-self: center;
+	justify-self: center;
 }
 
 /* Button in footer */
 .footer-button input[type="button"] {
-    font-family: HindRegular, sans-serif;
-    width: 150px;
-    height: 75px;
-    font-size: 26px;
-    border-radius: 5px;
-    font-weight: normal;
-    text-align: center;
+	font-family: HindRegular, sans-serif;
+	line-height: 37.5px;
+	width: 150px;
+	height: 75px;
+	font-size: 26px;
+	border-radius: 5px;
+	font-weight: normal;
+	text-align: center;
 }
 
 .footer-button {
-    padding: 0;
-    margin: 0 100px;
-    align-items: center;
+	padding: 0;
+	margin: 0 100px;
+	align-items: center;
 }
 
 /* Contacts in footer */
 .footer-contacts {
-    margin: auto;
-    width: 25%;
+	margin: auto;
+	width: 25%;
 }
 
 .footer-contacts img {
-    float: right;
-    width: 37.5px;
-    margin: 12.5px 25px;
+	float: right;
+	width: 37.5px;
+	margin: 12.5px 25px;
 }
 
 /* Resize when window size is small */
 @media screen and (max-width: 1024px) {
-    .footer-button {
-        margin: 0 5px;
-    }
+	.footer-button {
+		margin: 0 5px;
+	}
 }
