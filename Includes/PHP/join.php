@@ -33,7 +33,7 @@ if (isset($_POST['submit'])) {
 		echo "Error: " . $sql . "<br>" . $conn->error;
 	}
 	mail($email_list,$subject,$body,$header);
-	header("Location: /thanks-join/");
+	//header("Location: /thanks-join/");
 } else {
 	header("Location: /sorry/");
 }
