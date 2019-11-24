@@ -2,7 +2,7 @@
 $server = 'localhost';
 $uname = 'php';
 $password = 'SecurePHP1^';
-$db = 'Contact_Record';
+$db = 'FPC_Code';
 
 $conn = new mysqli($server, $uname, $password, $db);
 if ($conn->connect_error) {
@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
 	$header = "From: noreply@codefpc.com";
 	$body = $name." has requested a website:";
 
-	$sql = "INSERT INTO FPC_Code (Name, Email, Subject, Message)
+	$sql = "INSERT INTO Contact_Record (Name, Email, Subject, Message)
 			VALUES ('$name', '$email', $subject, '$message')";
 
 	if ($conn->query($sql) === TRUE) {
