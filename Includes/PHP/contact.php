@@ -29,7 +29,7 @@ if (isset($_POST['submit'])) {
 	}
 
 	mail($mailto, "Website Request", "\n".$body."\n\n".$email."\n\n".$signuptype."\n".$webtype."\n\n".$webtypeother."\n\n".$access, $header);
-	//header("Location: /thanks-contact/");
+	header("Location: /thanks-contact/");
 } else {
 	header("Location: /sorry/");
 }
