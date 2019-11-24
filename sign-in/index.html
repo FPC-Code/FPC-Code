@@ -8,6 +8,7 @@
 
 		<link rel="stylesheet" href="/Includes/CSS/menu.css" />
 		<link rel="stylesheet" href="/Includes/CSS/main.css" />
+		<link rel="stylesheet" href="/Includes/CSS/form.css" />
 		<link rel="stylesheet" href="/Includes/CSS/footer.css" />
 		<link
 			rel="shortcut icon"
@@ -71,8 +72,23 @@
 
 			<h1>Sign In to Meetings</h1>
 
+			<section id="club-requirements">
+				<h2>Members Only</h2>
+
+				<div class="text">
+					<ul>
+						<li>
+							<p>
+								This form is for <strong>members only</strong>. Please refrain from
+								using this form if you are not a member of FPC Code.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+
 			<section class="sign-in">
-				<div class="box">
+				<!-- <div class="box">
 					<iframe
 						src="https://docs.google.com/forms/d/e/1FAIpQLScBwlBQ8yJrgVV8sciNnjNhjEplOeYhzIBd4C-EmbCj4pHAtg/viewform?embedded=true"
 						frameborder="0"
@@ -80,7 +96,7 @@
 					>
 					</iframe>
 				</div>
-				<!-- <div class="box">
+				<div class="box">
 					<iframe
 						src="https://docs.google.com/forms/d/e/1FAIpQLSegqJWloCizRbg8Skgittw0L8bXg7gcfptJ7xk4juRwejnt3Q/viewform?embedded=true"
 						frameborder="0"
@@ -92,6 +108,62 @@
 				</div> -->
 			</section>
 		</main>
+
+		<section id="join-form">
+			<div class="form-title">
+				<h2>Sign In Form</h2>
+
+				<!-- <p>
+					Fill out the form below to be able to show up to the next meeting.
+				</p> -->
+
+				<p>
+					<strong>Note: Form currently under maintenance. WILL NOT WORK</strong>
+				</p>
+			</div>
+
+			<div class="form">
+				<form method="POST" action="/Includes/PHP/join.php">
+					<input type="hidden" name="subject" value="New Member" />
+
+					<label class="form-header" for="fname">Full Name</label>
+					<input type="text" name="name" placeholder="What's your full name?" />
+
+					<label class="form-header" for="semail">School Email</label>
+					<input type="email" name="email" placeholder="What's your school email?" />
+
+					<label class="form-header" for="grade">Current Grade</label>
+
+					<div class="radio-buttons">
+						<label class="container"
+							>9th (Freshman)
+							<input type="radio" checked="checked" name="radio" />
+							<span class="checkmark"></span>
+						</label>
+
+						<label class="container"
+							>10th (Sophmore)
+							<input type="radio" name="radio" />
+							<span class="checkmark"></span>
+						</label>
+
+						<label class="container"
+							>11th (Junior)
+							<input type="radio" name="radio" />
+							<span class="checkmark"></span>
+						</label>
+
+						<label class="container"
+							>12th (Senior)
+							<input type="radio" name="radio" />
+							<span class="checkmark"></span>
+						</label>
+					</div>
+
+					<input type="submit" name="submit" value="Submit" />
+				</form>
+			</div>
+		</section>
 
 		<footer>
 			<div class="footer-logo">
