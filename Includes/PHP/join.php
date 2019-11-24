@@ -2,8 +2,9 @@
 $server = 'localhost';
 $uname = 'php';
 $password = 'SecurePHP1^';
+$db = 'Member';
 
-$conn = new mysqli($server, $uname, $password);
+$conn = new mysqli($server, $uname, $password, $db);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
@@ -23,17 +24,16 @@ if (isset($_POST['submit'])) {
 	$header = "From: noreply@codefpc.com";
 	$body = $name." has joined Coding Club!: \n\nGrade:	".$grade."\nEmail:	".$email;
 
-	mail($email_list,$subject,$body,$header);
-	header("Location: /thanks-join/");
-
 	$sql = "INSERT INTO FPC_Code.Member (Name, Email, Grade_at_Join)
-VALUES ('$name', '$email', '$grade')";
+			VALUES ('$name', '$email', '$grade')";
 
 	if ($conn->query($sql) === TRUE) {
 		echo "New record created successfully";
 	} else {
 		echo "Error: " . $sql . "<br>" . $conn->error;
 	}
+	mail($email_list,$subject,$body,$header);
+	header("Location: /thanks-join/");
 } else {
 	header("Location: /sorry/");
 }
