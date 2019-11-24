@@ -2,7 +2,7 @@
 $server = 'localhost';
 $uname = 'php';
 $password = 'SecurePHP1^';
-$db = 'Member';
+$db = 'FPC_Code';
 
 $conn = new mysqli($server, $uname, $password, $db);
 if ($conn->connect_error) {
@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
 	$header = "From: noreply@codefpc.com";
 	$body = $name." has joined Coding Club!: \n\nGrade:	".$grade."\nEmail:	".$email;
 
-	$sql = "INSERT INTO FPC_Code.Member (Name, Email, Grade_at_Join)
+	$sql = "INSERT INTO Member (Name, Email, Grade_at_Join)
 			VALUES ('$name', '$email', '$grade')";
 
 	if ($conn->query($sql) === TRUE) {
