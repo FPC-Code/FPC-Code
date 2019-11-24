@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
 	$body = $name." has requested a website:";
 
 	$sql = "INSERT INTO Contact_Record (Name, Email, Subject, Message)
-			VALUES ('$name', '$email', $subject, '$message')";
+			VALUES ('$name', '$email', '$subject', '$message')";
 
 	if ($conn->query($sql) === TRUE) {
 		echo "New record created successfully";
