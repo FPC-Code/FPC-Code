@@ -81,11 +81,19 @@
 		</header>
 
 		<main>
-			<div class="home-image">
-				<img
-					src="/Images/Home/home_banner.jpg"
-					alt="Code on a screen."
-				/>
+			<div
+				class="home-image"
+				style='background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("../../Images/Home/home_banner.jpg");
+		/* Set a specific height */
+		height: 50vh;
+
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;'
+			>
 				<h1>We Are So Sorry!</h1>
 			</div>
 

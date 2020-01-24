@@ -80,11 +80,19 @@
 		</header>
 
 		<main>
-			<div class="home-image">
-				<img
-					src="/Images/Sign-in/sign-in_banner.jpg"
-					alt="Students sitting in class."
-				/>
+			<div
+				class="home-image"
+				style='background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("../../Images/Sign-in/sign-in_banner.jpg");
+		/* Set a specific height */
+		height: 50vh;
+
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;'
+			>
 				<h1>Sign In to Meetings</h1>
 			</div>
 

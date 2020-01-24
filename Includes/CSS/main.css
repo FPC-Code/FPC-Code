@@ -68,18 +68,6 @@ h2 {
 	width: 100%;
 	position: relative;
 	text-align: center;
-	/* The image used */
-
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		url("../../Images/Home/home_banner.jpg");
-	/* Set a specific height */
-	height: 50vh;
-
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 /* Sets margin for sign-in google forms */
