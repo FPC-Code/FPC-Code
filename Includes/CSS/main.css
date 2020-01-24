@@ -21,19 +21,22 @@ body {
 	height: 100%;
 	width: 100%;
 	font-size: 0px;
+	overflow-x: hidden;
 }
 
 /* Main margins */
 main {
-	margin-bottom: 250px;
+	margin-bottom: 0;
 	margin-top: 75px;
+	margin-right: 0;
+	padding-right: 0;
 }
 
 /* Heading Styles */
 h1 {
 	font-size: 56px;
 	font-weight: bold;
-	color: #f0f1eb;
+	color: #f7f7f7;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -44,14 +47,14 @@ h1 {
 }
 
 h2 {
-	background-color: #779869;
-	color: #f0f1eb;
+	background-color: #778e80;
+	color: #f7f7f7;
 	width: 100%;
 	text-align: center;
 	padding: 20px 50px;
 	font-size: 46px;
-	margin-top: 0px;
-	margin-bottom: 50px;
+	/* margin-top: 25px;
+	margin-bottom: 25px; */
 }
 
 /* Image banner */
@@ -68,6 +71,13 @@ h2 {
 	width: 100%;
 	position: relative;
 	text-align: center;
+
+	/* Set a specific height */
+	height: 70vh;
+
+	/* Create the parallax scrolling effect */
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 /* Sets margin for sign-in google forms */
@@ -75,37 +85,46 @@ h2 {
 	margin-top: 50px;
 }
 
+.img {
+	margin: 0;
+	padding: 0;
+}
 /* Styles for main text sections */
 .text ul {
 	background-color: #778e80;
-	max-width: 600px;
+	width: 100%;
 	padding: 0;
-	padding-top: 25px;
-	padding-bottom: 35px;
+	padding-top: 0;
+	padding-bottom: 0;
 	margin: auto;
-	margin-top: 50px;
-	margin-bottom: 100px;
-	border-radius: 5px;
+	margin-top: 0;
+	margin-bottom: 0px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 	transition: 0.25s;
 	text-align: center;
 }
 
 .text li {
 	display: inline-block;
-	margin: 0px 50px;
+	margin: 0px 0px;
 	vertical-align: top;
+	width: 100%;
+	text-align: center;
 }
 
-.text p {
-	color: #f0f1eb;
+.text h3 {
+	color: #f7f7f7;
 	text-align: center;
+	font-size: 1em;
+	font-weight: normal;
 	padding: 0;
 	margin: 1.25vw;
 	margin-bottom: 25px;
 	font-size: 20px;
 	line-height: 30px;
 	transition: 0.25s;
-	width: 450px;
+	width: 100%;
 }
 
 .text a {
@@ -176,17 +195,11 @@ iframe {
 /* Resize when window size is small */
 @media screen and (max-width: 1024px) {
 	.text ul {
-		max-width: 400px;
+		max-width: 100%;
 	}
 
-	.text p {
-		width: 300px;
-	}
-
-	.text img {
-		width: 300px;
-		height: 200px;
-		object-fit: cover;
+	.text h3 {
+		width: 100%;
 	}
 
 	iframe {
