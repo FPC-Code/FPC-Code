@@ -17,8 +17,8 @@
 
 /* Text for form */
 .form-title {
-	background-color: #779869;
-	color: #f0f1eb;
+	background-color: #778e80;
+	color: #f7f7f7;
 	margin-bottom: 0px;
 }
 
@@ -28,8 +28,8 @@
 	margin-bottom: 25px;
 }
 
-.form-title p {
-	color: #f0f1eb;
+.form-title h4 {
+	color: #f7f7f7;
 	font-style: italic;
 	font-size: 18px;
 	padding-bottom: 15px;
@@ -38,13 +38,13 @@
 }
 
 .form-header {
-	color: #f0f1eb;
+	color: #f7f7f7;
 	font-size: 30px;
 	font-weight: bold;
 }
 
 .form p {
-	color: #f0f1eb;
+	color: #f7f7f7;
 	font-size: 16px;
 	padding-bottom: 0px;
 	padding-top: 10px;
@@ -62,7 +62,7 @@ input[type="text"] {
 	border-width: 0px;
 	border-radius: 5px;
 	color: #6e7869;
-	background-color: #f0f1eb;
+	background-color: #f7f7f7;
 	border-color: #212922;
 	border-style: solid;
 	font-size: 18pt;
@@ -83,7 +83,7 @@ textarea {
 	border-width: 0px;
 	border-radius: 5px;
 	color: #6e7869;
-	background-color: #f0f1eb;
+	background-color: #f7f7f7;
 	border-color: #212922;
 	border-style: solid;
 	font-size: 18pt;
@@ -105,7 +105,7 @@ input[type="email"] {
 	border-width: 0px;
 	border-radius: 5px;
 	color: #6e7869;
-	background-color: #f0f1eb;
+	background-color: #f7f7f7;
 	border-color: #212922;
 	border-style: solid;
 	font-size: 18pt;
@@ -124,7 +124,7 @@ input[type="submit"] {
 	height: 50px;
 	border-width: 0px;
 	border-radius: 5px;
-	color: #f0f1eb;
+	color: #f7f7f7;
 	background: #6e7869 !important;
 	border-color: #212922;
 	border-style: solid;
@@ -178,7 +178,7 @@ input[type="submit"]:hover {
 	left: 0;
 	height: 25px;
 	width: 25px;
-	background-color: #f0f1eb;
+	background-color: #f7f7f7;
 	border-radius: 50%;
 }
 
@@ -211,7 +211,7 @@ input[type="submit"]:hover {
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
-	background: #f0f1eb;
+	background: #f7f7f7;
 }
 
 /* Resize when window size is small */

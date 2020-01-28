@@ -106,8 +106,7 @@ h2 {
 	margin: auto;
 	margin-top: 0;
 	margin-bottom: 0px;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
+
 	transition: 0.25s;
 	text-align: center;
 }
@@ -126,12 +125,57 @@ h2 {
 	font-size: 1em;
 	font-weight: normal;
 	padding: 0;
-	margin: 1.25vw;
+	margin: auto;
 	margin-bottom: 25px;
 	font-size: 20px;
 	line-height: 30px;
 	transition: 0.25s;
 	width: 100%;
+}
+.projects {
+	text-align: center;
+	margin-top: 5%;
+}
+.projects h2 {
+	width: 70%;
+	margin: auto;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.projects ul {
+	background-color: #778e80;
+	width: 70%;
+	padding: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin: auto;
+
+	margin-bottom: 5%;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	transition: 0.25s;
+	text-align: center;
+}
+.projects li {
+	display: inline-block;
+	margin: auto;
+	vertical-align: top;
+	width: 100%;
+	text-align: center;
+}
+
+.projects h3 {
+	color: #f7f7f7;
+	text-align: center;
+	font-size: 1em;
+	font-weight: normal;
+	padding: 0;
+	margin: auto;
+	margin-bottom: 25px;
+	font-size: 20px;
+	line-height: 30px;
+	transition: 0.25s;
+	width: 90%;
 }
 
 .text a {
@@ -158,6 +202,9 @@ h2 {
 	transition: 0.25s;
 }
 
+#officers-list {
+	margin-top: 5%;
+}
 /* Button styles */
 input[type="button"] {
 	background: #6e7869 !important;
