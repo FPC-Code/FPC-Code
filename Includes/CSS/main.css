@@ -73,7 +73,7 @@ h2 {
 	text-align: center;
 
 	/* Set a specific height */
-	height: 70vh;
+	height: 75vh;
 
 	/* Create the parallax scrolling effect */
 	background-position: center;
@@ -88,6 +88,13 @@ h2 {
 .img {
 	margin: 0;
 	padding: 0;
+
+	/* Set a specific height */
+	height: 70vh;
+
+	/* Create the parallax scrolling effect */
+	background-position: center;
+	background-repeat: no-repeat;
 }
 /* Styles for main text sections */
 .text ul {
@@ -183,7 +190,7 @@ input[type="button"]:hover {
 	font-weight: normal;
 }
 
-/* Iframe style */
+/* iframe style */
 
 iframe {
 	display: block;
