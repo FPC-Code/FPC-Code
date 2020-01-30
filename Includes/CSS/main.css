@@ -16,8 +16,8 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
 		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	letter-spacing: 0px;
-	color: #f0f1eb;
-	background: #f0f1eb;
+	color: #f7f7f7;
+	background: #f7f7f7;
 	height: 100%;
 	width: 100%;
 	font-size: 0px;
@@ -73,7 +73,7 @@ h2 {
 	text-align: center;
 
 	/* Set a specific height */
-	height: 75vh;
+	height: calc(50vh - 75px);
 
 	/* Create the parallax scrolling effect */
 	background-position: center;
@@ -202,9 +202,6 @@ h2 {
 	transition: 0.25s;
 }
 
-#officers-list {
-	margin-top: 5%;
-}
 /* Button styles */
 input[type="button"] {
 	background: #6e7869 !important;
